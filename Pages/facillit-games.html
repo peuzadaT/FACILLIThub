@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FACILLIT games - Aprender Nunca Foi Tão Divertido</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --color-primary: #ff3131;
+            --color-secondary: #ff914d;
+            --bg-dark: #0d1117;
+            --bg-glass: rgba(22, 27, 34, 0.7);
+            --border-glass: rgba(255, 255, 255, 0.1);
+            --text-light: #e2e8f0;
+            --text-muted: #94a3b8;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+        }
+        
+        .section-container { padding: 6rem 1rem; position: relative; overflow: hidden; }
+        .section-title { font-size: 2.5rem; line-height: 1.2; font-weight: 800; color: #fff; }
+        .section-subtitle { font-size: 1.125rem; color: var(--text-muted); margin-top: 1rem; max-w: 42rem; margin-left: auto; margin-right: auto; }
+        
+        header { background: rgba(13, 17, 23, 0.5); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-bottom: 1px solid var(--border-glass); }
+        
+        .cta-button { background: linear-gradient(90deg, var(--color-primary), var(--color-secondary)); color: #fff; font-weight: 700; padding: 0.6rem 1.5rem; border-radius: 9999px; transition: all 0.3s; }
+        .cta-button:hover { box-shadow: 0 0 20px var(--color-primary); transform: scale(1.05); }
+
+        /* Estilo do Hero Interativo */
+        #hero-games { perspective: 1500px; }
+        .parallax-element {
+            position: absolute;
+            transition: transform 0.1s ease-out;
+            will-change: transform;
+        }
+        
+        .card { border: 1px solid var(--border-glass); border-radius: 1rem; padding: 2rem; transition: all 0.3s; }
+        .card:hover { transform: translateY(-5px); background-color: rgba(255,255,255,0.03); }
+
+        .world-card {
+            background: linear-gradient(145deg, #1f2937, #111827);
+            border-radius: 1rem;
+            padding: 2rem;
+            border: 1px solid var(--border-glass);
+            transition: all 0.3s ease;
+        }
+        .world-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px -10px #000;
+        }
+
+        .fade-in-section { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
+        .fade-in-section.is-visible { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+<body class="antialiased">
+    <header class="sticky top-0 w-full z-50">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="/images/plataformas/games.png" alt="FACILLIT hub Logo" class="w-10 h-10">
+                <div class="text-xl font-bold text-white">
+    FACILLIT <span class="bg-gradient-to-r from-[#ff3131] to-[#f97316] text-transparent bg-clip-text font-bold">games</span>
+</div>
+            </a>
+            <div class="hidden md:flex items-center gap-8 font-medium text-slate-300">
+                <a href="#para-pais" class="hover:text-white transition-colors">Para os Pais</a>
+                <a href="#mundos" class="hover:text-white transition-colors">Mundos</a>
+                <a href="index.html#planos" class="hover:text-white transition-colors">Preços</a>
+            </div>
+            <a href="index.html#planos" class="cta-button">
+                Começar a Jogar
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero-games" class="section-container min-h-screen flex items-center justify-center text-center">
+            <div data-depth="0.2" class="parallax-element absolute top-1/4 left-1/4 w-12 h-12 bg-red-500 rounded-full opacity-50"></div>
+            <div data-depth="0.6" class="parallax-element absolute bottom-1/4 right-1/4 w-16 h-16 bg-orange-500 rounded-xl opacity-50 -rotate-45"></div>
+            <div data-depth="0.3" class="parallax-element absolute top-20 right-1/3 w-8 h-8 bg-cyan-400 rounded-lg opacity-50"></div>
+            <div data-depth="0.4" class="parallax-element absolute bottom-1/3 left-1/4 w-20 h-20 border-2 border-pink-500 rounded-full opacity-50"></div>
+
+            <div class="container mx-auto px-4 z-10">
+                <h1 class="text-4xl md:text-7xl font-extrabold text-white leading-tight max-w-4xl mx-auto">Onde a Diversão Encontra o Conhecimento</h1>
+                <p class="section-subtitle">Uma plataforma de jogos educativos desenhada por pedagogos para despertar a curiosidade, desenvolver habilidades e garantir um ambiente 100% seguro para crianças.</p>
+                <div class="mt-8">
+                    <a href="#planos" class="cta-button text-lg">Vamos Jogar!</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="para-pais" class="section-container bg-white/5">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16 fade-in-section">
+                    <h2 class="section-title">Tranquilidade para os Pais, Aventura para os Pequenos</h2>
+                    <p class="section-subtitle">Desenvolvemos o FACILLIT games com os mais altos padrões de segurança e qualidade pedagógica.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="card text-center fade-in-section">
+                        <h3 class="font-bold text-xl text-white mb-3">Ambiente 100% Seguro</h3>
+                        <p class="text-slate-400">Sem anúncios, sem compras dentro do app e sem links externos. A diversão acontece em um espaço controlado e protegido.</p>
+                    </div>
+                    <div class="card text-center fade-in-section">
+                        <h3 class="font-bold text-xl text-white mb-3">Conteúdo Pedagógico</h3>
+                        <p class="text-slate-400">Cada jogo é criado por uma equipe de pedagogos para reforçar o conteúdo escolar de forma lúdica e eficaz.</p>
+                    </div>
+                    <div class="card text-center fade-in-section">
+                        <h3 class="font-bold text-xl text-white mb-3">Controle Parental</h3>
+                        <p class="text-slate-400">Defina limites de tempo diário e veja relatórios detalhados sobre o progresso e as áreas de destaque do seu filho.</p>
+                    </div>
+                    <div class="card text-center fade-in-section">
+                        <h3 class="font-bold text-xl text-white mb-3">Conformidade com a LGPD</h3>
+                        <p class="text-slate-400">Tratamos os dados das crianças com o máximo rigor, seguindo todas as diretrizes da Lei Geral de Proteção de Dados.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="mundos" class="section-container">
+             <div class="container mx-auto px-4">
+                <div class="text-center mb-16 fade-in-section">
+                    <h2 class="section-title">Uma Galáxia de Conhecimento para Explorar</h2>
+                    <p class="section-subtitle">Nossos jogos são organizados em mundos temáticos, cada um com desafios e aventuras únicas.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="world-card fade-in-section">
+                        <h3 class="text-3xl font-bold mb-3 bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-blue-500">Universo dos Números</h3>
+                        <p>A matemática se torna uma aventura! De quebra-cabeças de adição a corridas de tabuada, as crianças perdem o medo dos números e desenvolvem o raciocínio lógico.</p>
+                    </div>
+                    <div class="world-card fade-in-section">
+                         <h3 class="text-3xl font-bold mb-3 bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">Planeta das Palavras</h3>
+                        <p>Explore a leitura e a escrita com jogos de formação de palavras, caça-sinônimos e desafios de ortografia que expandem o vocabulário de forma natural.</p>
+                    </div>
+                     <div class="world-card fade-in-section">
+                        <h3 class="text-3xl font-bold mb-3 bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-teal-500">Constelação da Lógica</h3>
+                        <p>Quebra-cabeças, jogos de estratégia e desafios de programação em blocos que ensinam as crianças a pensar de forma estruturada e a resolver problemas complexos.</p>
+                    </div>
+                     <div class="world-card fade-in-section">
+                        <h3 class="text-3xl font-bold mb-3 bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500">Galáxia da Ciência</h3>
+                        <p>Viagens pelo corpo humano, construção de ecossistemas e experimentos virtuais. A ciência ganha vida e desperta a curiosidade para o mundo ao redor.</p>
+                    </div>
+                </div>
+             </div>
+        </section>
+
+        <section class="section-container bg-white/5">
+            <div class="container mx-auto px-4">
+                 <div class="text-center mb-16 fade-in-section">
+                    <h2 class="section-title">Começar é brincadeira de criança</h2>
+                </div>
+                <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                    <div class="fade-in-section">
+                        <div class="mx-auto w-24 h-24 rounded-full bg-red-500/10 flex items-center justify-center text-3xl font-bold text-red-400 border-2 border-red-500/50">1</div>
+                        <h3 class="font-bold text-xl text-white mt-6 mb-2">Crie sua conta de Responsável</h3>
+                        <p class="text-slate-400">É rápido, seguro e você fica no controle.</p>
+                    </div>
+                     <div class="fade-in-section">
+                        <div class="mx-auto w-24 h-24 rounded-full bg-orange-500/10 flex items-center justify-center text-3xl font-bold text-orange-400 border-2 border-orange-500/50">2</div>
+                        <h3 class="font-bold text-xl text-white mt-6 mb-2">Adicione o perfil da criança</h3>
+                        <p class="text-slate-400">Crie perfis separados para cada filho, com nome e faixa etária.</p>
+                    </div>
+                     <div class="fade-in-section">
+                        <div class="mx-auto w-24 h-24 rounded-full bg-pink-500/10 flex items-center justify-center text-3xl font-bold text-pink-400 border-2 border-pink-500/50">3</div>
+                        <h3 class="font-bold text-xl text-white mt-6 mb-2">Libere a diversão!</h3>
+                        <p class="text-slate-400">A criança joga e aprende, e você acompanha tudo pelo seu painel.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer class="bg-black/20 border-t border-white/10"><div class="container mx-auto px-8 py-12 text-center"><p class="text-slate-400 text-sm">© <span id="current-year"></span> FACILLIT hub. Todos os direitos reservados.</p></div></footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Observer para animações de fade-in
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            document.querySelectorAll('.fade-in-section').forEach(el => {
+                observer.observe(el);
+            });
+
+            // Lógica do Parallax no Hero
+            const heroSection = document.getElementById('hero-games');
+            if(heroSection) {
+                heroSection.addEventListener('mousemove', (e) => {
+                    const { clientX, clientY } = e;
+                    const { offsetWidth, offsetHeight } = heroSection;
+                    const x = (clientX / offsetWidth - 0.5);
+                    const y = (clientY / offsetHeight - 0.5);
+
+                    document.querySelectorAll('.parallax-element').forEach(el => {
+                        const depth = el.dataset.depth || 0.5;
+                        const moveX = x * depth * -50; // -50 é a intensidade do movimento
+                        const moveY = y * depth * -50;
+                        el.style.transform = `translate3d(${moveX}px, ${moveY}px, 0)`;
+                    });
+                });
+            }
+
+            // Atualiza o ano no rodapé
+            const yearSpan = document.getElementById('current-year');
+            if (yearSpan) {
+                yearSpan.textContent = new Date().getFullYear();
+            }
+        });
+    </script>
+</body>
+</html>

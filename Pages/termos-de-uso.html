@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termos de Uso - FACILLIT hub</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --color-primary: #ff3131;
+            --color-secondary: #ff914d;
+            --bg-dark: #0d1117;
+            --text-light: #d1d5db;
+            --text-muted: #6b7280;
+            --border-color: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+        }
+        
+        header { 
+            background: rgba(13, 17, 23, 0.5);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        /* Layout de duas colunas */
+        .main-layout {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 4rem;
+        }
+        @media (min-width: 1024px) {
+            .main-layout {
+                grid-template-columns: 1fr 3fr;
+            }
+        }
+        
+        /* Navegação Lateral Fixa */
+        .sticky-nav {
+            position: sticky;
+            top: 8rem; /* Abaixo do header */
+            align-self: start;
+        }
+        .sticky-nav a {
+            display: block;
+            padding: 0.75rem 1rem;
+            border-radius: 0.5rem;
+            color: var(--text-muted);
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border-left: 3px solid transparent;
+        }
+        .sticky-nav a:hover {
+            background-color: rgba(255, 255, 255, 0.05);
+            color: white;
+        }
+        .sticky-nav a.active {
+            color: var(--color-secondary);
+            font-weight: 600;
+            background-color: rgba(255, 145, 77, 0.08);
+            border-left-color: var(--color-secondary);
+        }
+
+        /* Estilização do Conteúdo */
+        .content-article section:not(:last-child) {
+            padding-bottom: 3rem;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 3rem;
+        }
+        .content-article h2 {
+            font-size: 1.875rem; /* text-3xl */
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 1.5rem;
+        }
+        .content-article h3 {
+            font-size: 1.25rem; /* text-xl */
+            font-weight: 600;
+            color: #e5e7eb; /* gray-200 */
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        .content-article p, .content-article li {
+            line-height: 1.8;
+            font-size: 1rem;
+            color: var(--text-light);
+        }
+        .content-article ul {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+            margin-top: 1rem;
+        }
+        .content-article strong {
+            color: #ffffff;
+            font-weight: 600;
+        }
+        .content-article blockquote {
+            border-left: 4px solid var(--color-primary);
+            padding-left: 1rem;
+            margin: 1.5rem 0;
+            font-style: italic;
+            color: #9ca3af; /* gray-400 */
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <header class="sticky top-0 w-full z-50">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="/images/isotipo gradient(png).png" alt="FACILLIT hub Logo" class="w-10 h-10">
+                <span class="text-xl font-bold text-white">FACILLIT hub</span>
+            </a>
+            <a href="index.html" class="bg-white text-black font-bold py-2 px-5 rounded-full hover:bg-red-500 hover:text-white transition-all duration-300">
+                Voltar ao Site
+            </a>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-4 py-16">
+        <div class="main-layout">
+            <aside class="sticky-nav">
+                <h3 class="font-bold text-white text-lg mb-4 px-4">Tópicos do Documento</h3>
+                <nav id="terms-nav">
+                    <a href="#section-1" class="nav-link active">1. Introdução e Definições</a>
+                    <a href="#section-2" class="nav-link">2. Acesso e Contas</a>
+                    <a href="#section-3" class="nav-link">3. Propriedade Intelectual</a>
+                    <a href="#section-4" class="nav-link">4. Condições dos Serviços</a>
+                    <a href="#section-5" class="nav-link">5. Termos Comerciais</a>
+                    <a href="#section-6" class="nav-link">6. Responsabilidades e Leis</a>
+                </nav>
+            </aside>
+
+            <article class="content-article">
+                <div class="mb-12">
+                    <h1 class="text-5xl font-extrabold text-white">Termos e Condições de Uso</h1>
+                    <p class="text-lg text-gray-400 mt-2">Última atualização: 28 de maio de 2025 </p>
+                </div>
+
+                <section id="section-1">
+                    <h2>1. Introdução, Definições e Aceitação </h2>
+                    <h3>1.1. Boas-vindas ao FACILLIT hub </h3>
+                    <p>Seja bem-vindo(a) ao FACILLIT hub.  Somos um ecossistema integrado de soluções tecnológicas projetado para revolucionar a educação e a produtividade.  Nossa missão é transformar a maneira como as pessoas aprendem, ensinam e se organizam, conectando quatro plataformas distintas em uma experiência unificada: </p>
+                    <ul>
+                        <li><strong>FACILLIT day:</strong> Para organização da vida pessoal, bem-estar e alcance de metas. </li>
+                        <li><strong>FACILLIT write:</strong> Para a prática e correção de redações, com foco no ENEM e principais vestibulares. </li>
+                        <li><strong>FACILLIT games:</strong> Para o aprendizado lúdico e seguro de crianças. </li>
+                        <li><strong>FACILLIT edu:</strong> Para a gestão pedagógica inteligente de professores e instituições de ensino. </li>
+                    </ul>
+                    <h3>1.2. Vinculação e Aceitação dos Termos </h3>
+                    <blockquote>AO CRIAR UMA CONTA, ACESSAR OU UTILIZAR QUALQUER PARTE DA PLATAFORMA FACILLIT hub, VOCÊ DECLARA QUE LEU, COMPREENDEU E CONCORDA EM SE VINCULAR INTEGRALMENTE A ESTES TERMOS DE USO E À NOSSA POLÍTICA DE PRIVACIDADE. </blockquote>
+                    <p>Estes documentos constituem um contrato legalmente vinculante entre você e o FACILLIT hub.  Caso não concorde com qualquer uma das disposições, você não deverá utilizar nossos serviços.  O FACILLIT hub reserva-se o direito de atualizar estes Termos, e em caso de alterações substanciais, notificaremos os usuários. </p>
+                    <h3>1.3. Definições </h3>
+                    <ul>
+                        <li><strong>Plataforma ou Ecossistema:</strong> Refere-se ao conjunto de todos os nossos websites, aplicativos e serviços. </li>
+                        <li><strong>Usuário:</strong> Toda pessoa física ou jurídica que utiliza a Plataforma.  Pode se referir a perfis como Usuário Individual , Usuário Estudante , Usuário Criança (até 12 anos incompletos) , Usuário Responsável (pais ou responsáveis pela criança)  e Usuário Institucional (escolas, empresas, etc.).</li>
+                        <li><strong>Conteúdo do Usuário:</strong> Todas as informações que um Usuário insere na Plataforma, como textos, redações e metas. </li>
+                        <li><strong>LGPD e Marco Civil da Internet:</strong> Referem-se, respectivamente, à Lei Geral de Proteção de Dados Pessoais (Lei nº 13.709/2018)  e à Lei nº 12.965/2014.</li>
+                    </ul>
+                </section>
+
+                <section id="section-2">
+                    <h2>2. Acesso à Plataforma e Contas de Usuário </h2>
+                    <p>Para criar uma conta como Usuário Individual, você deve ter no mínimo 18 anos de idade e plena capacidade legal.  Você é o único responsável por todas as atividades em sua conta e por manter sua senha segura.  O FACILLIT hub não será responsável por perdas decorrentes de sua falha em proteger suas credenciais. </p>
+                    <h3>2.3. Contas para Crianças (FACILLIT games) </h3>
+                    <p>Contas para crianças devem ser criadas exclusivamente por um pai ou responsável legal (Usuário Responsável).  Este processo exige o consentimento específico do responsável para o tratamento de dados da criança, em conformidade com o Artigo 14 da LGPD.  Empregaremos todos os esforços razoáveis para verificar que o consentimento foi dado pelo responsável legal. </p>
+                </section>
+
+                <section id="section-3">
+                    <h2>3. Propriedade Intelectual e Conduta do Usuário </h2>
+                    <h3>3.1. Direitos da FACILLIT hub </h3>
+                    <p>A Plataforma e nosso conteúdo são protegidos por leis de direitos autorais e marcas registradas.  Concedemos a você uma licença limitada, pessoal e não exclusiva para usar os Serviços para fins pessoais e não comerciais. </p>
+                    <h3>3.2. Direitos sobre o Conteúdo do Usuário </h3>
+                    <p>Você retém todos os direitos sobre o conteúdo que você insere na plataforma.  No entanto, ao fornecer seu conteúdo, você nos concede uma licença para usar, modificar e distribuir esse conteúdo na medida necessária para operar e melhorar nossos Serviços.  Por exemplo, processar uma redação para correção.  Também podemos usar dados de forma anonimizada e agregada para pesquisa e desenvolvimento. </p>
+                    <h3>3.3. Código de Conduta </h3>
+                    <p>Você concorda em não usar a Plataforma para fins ilegais, não publicar conteúdo fraudulento, odioso ou ofensivo, e não introduzir vírus ou qualquer tipo de software malicioso.  Reservamo-nos o direito de remover qualquer conteúdo que viole estes Termos. </p>
+                </section>
+                
+                <section id="section-4">
+                    <h2>4. Condições Específicas dos Serviços </h2>
+                    <p>Cada plataforma tem suas particularidades. O feedback do <strong>FACILLIT write</strong> é educacional e sugestivo.  No <strong>FACILLIT games</strong>, não condicionamos a participação de crianças ao fornecimento de dados além do estritamente necessário.  A relação com o <strong>FACILLIT edu</strong> é regida por um contrato específico, que prevalece sobre estes Termos em caso de conflito.  O <strong>FACILLIT day</strong> é uma ferramenta de auxílio, e não nos responsabilizamos pelo seu sucesso ou fracasso em atingir as metas que você mesmo estabeleceu. </p>
+                </section>
+                
+                <section id="section-5">
+                    <h2>5. Termos Comerciais </h2>
+                    <p>Alguns serviços exigem pagamento de assinaturas.  A menos que especificado, as assinaturas são renovadas automaticamente, mas você pode cancelar a qualquer momento antes da data de renovação para evitar a próxima cobrança.  A política de reembolso segue o Código de Defesa do Consumidor, incluindo o direito de arrependimento de 7 dias para compras online. </p>
+                </section>
+                
+                <section id="section-6">
+                    <h2>6. Limitações de Responsabilidade, Legislação e Foro </h2>
+                    <p>OS SERVIÇOS SÃO FORNECIDOS "NO ESTADO EM QUE SE ENCONTRAM" ("AS IS"), SEM GARANTIAS DE QUALQUER TIPO.  Não garantimos que os serviços estarão sempre disponíveis, seguros ou livres de erros.  Nossa responsabilidade total por qualquer reclamação relacionada aos serviços não excederá o valor total pago por você nos últimos seis meses. </p>
+                    <p>Estes Termos são regidos pelas leis do Brasil.  Fica eleito o foro da comarca de domicílio do Usuário para resolver quaisquer disputas. </p>
+                </section>
+
+            </article>
+        </div>
+    </main>
+    
+    <footer class="bg-black/20 border-t border-white/10 mt-12">
+        <div class="container mx-auto px-8 py-12 text-center">
+             <p class="text-slate-400 text-sm">© <span id="current-year"></span> FACILLIT hub. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const navLinks = document.querySelectorAll('.nav-link');
+            const sections = document.querySelectorAll('.content-article section');
+
+            // Função de clique e rolagem suave
+            navLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const targetId = link.getAttribute('href');
+                    const targetSection = document.querySelector(targetId);
+                    if (targetSection) {
+                        targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                });
+            });
+
+            // Observer para destacar o link de navegação ao rolar
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const id = entry.target.getAttribute('id');
+                        // Remove 'active' de todos os links
+                        navLinks.forEach(link => link.classList.remove('active'));
+                        // Adiciona 'active' ao link correspondente
+                        const activeLink = document.querySelector(`.nav-link[href="#${id}"]`);
+                        if(activeLink) {
+                            activeLink.classList.add('active');
+                        }
+                    }
+                });
+            }, { 
+                rootMargin: '-30% 0px -60% 0px', // Ativa quando a seção está no meio da tela
+                threshold: 0 
+            });
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+            
+            // Atualizar ano no rodapé
+            const yearSpan = document.getElementById('current-year');
+            if (yearSpan) {
+                yearSpan.textContent = new Date().getFullYear();
+            }
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FACILLIT edu - A Plataforma de Gestão Educacional</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --color-primary: #ff3131;
+            --color-secondary: #ff914d;
+            --bg-dark: #0d1117;
+            --bg-glass: rgba(22, 27, 34, 0.7);
+            --border-glass: rgba(255, 255, 255, 0.1);
+            --text-light: #e2e8f0;
+            --text-muted: #94a3b8;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+        }
+        
+        .section-container { padding: 6rem 1rem; position: relative; overflow: hidden; }
+        .section-title { font-size: 2.5rem; line-height: 1.2; font-weight: 800; color: #fff; }
+        .section-subtitle { font-size: 1.125rem; color: var(--text-muted); margin-top: 1rem; max-w: 42rem; margin-left: auto; margin-right: auto; }
+        
+        header { background: rgba(13, 17, 23, 0.5); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-bottom: 1px solid var(--border-glass); }
+        
+        .cta-button { background: linear-gradient(90deg, var(--color-primary), var(--color-secondary)); color: #fff; font-weight: 700; padding: 0.6rem 1.5rem; border-radius: 9999px; transition: all 0.3s; }
+        .cta-button:hover { box-shadow: 0 0 20px var(--color-primary); transform: scale(1.05); }
+
+        /* Estilo do Dashboard Falso */
+        .mockup-dashboard {
+            background: linear-gradient(145deg, #1f2937, #111827);
+            border-radius: 1rem;
+            border: 1px solid var(--border-glass);
+            box-shadow: 0 20px 50px -20px rgba(0,0,0,0.5);
+            padding: 1.5rem;
+        }
+        .mockup-chart-bar { background-color: var(--color-primary); opacity: 0.6; border-radius: 4px; transition: opacity 0.3s; }
+        .mockup-chart-bar:hover { opacity: 1; }
+
+        .feature-card { border: 1px solid var(--border-glass); border-radius: 1rem; padding: 2rem; transition: all 0.3s; }
+        .feature-card:hover { transform: translateY(-5px); background-color: rgba(255,255,255,0.03); }
+        
+        .tab-button { background-color: rgba(255,255,255,0.05); color: var(--text-muted); padding: 0.75rem 1.5rem; border-radius: 9999px; font-weight: 500; transition: all 0.3s; }
+        .tab-button:hover { background-color: rgba(255,255,255,0.1); color: #fff; }
+        .tab-button.active { background-color: var(--color-primary); color: #fff; }
+
+        .fade-in-section { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
+        .fade-in-section.is-visible { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+<body class="antialiased">
+    <header class="sticky top-0 w-full z-50">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="/images/plataformas/edu.png" alt="FACILLIT hub Logo" class="w-10 h-10">
+               <div class="text-xl font-bold text-white">
+    FACILLIT <span class="bg-gradient-to-r from-[#ff3131] to-[#f97316] text-transparent bg-clip-text font-bold">edu</span>
+</div>
+            </a>
+            <div class="hidden md:flex items-center gap-8 font-medium text-slate-300">
+                <a href="#features" class="hover:text-white transition-colors">Recursos</a>
+                <a href="#para-quem" class="hover:text-white transition-colors">Para Quem</a>
+                <a href="index.html#planos" class="hover:text-white transition-colors">Preços</a>
+            </div>
+            <a href="index.html#contato" class="cta-button">
+                Solicitar Demonstração
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="section-container text-center">
+            <div class="container mx-auto px-4">
+                <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight max-w-4xl mx-auto">Menos Burocracia, Mais Pedagogia</h1>
+                <p class="section-subtitle">A plataforma de gestão educacional que centraliza o planejamento, automatiza tarefas e devolve o seu tempo para o que realmente importa: ensinar.</p>
+                <div class="mt-8">
+                    <a href="#contato" class="cta-button text-lg">Solicitar Demonstração</a>
+                </div>
+
+                <div class="mockup-dashboard max-w-5xl mx-auto mt-16 text-left fade-in-section">
+                    <h3 class="font-bold text-white">Dashboard de Desempenho - Turma 9A</h3>
+                    <p class="text-sm text-slate-400 mb-6">Visão geral do engajamento e notas do bimestre.</p>
+                    <div class="h-64 bg-slate-800/50 rounded-lg p-4 flex items-end gap-4">
+                        <div class="mockup-chart-bar w-full" style="height: 75%;"></div>
+                        <div class="mockup-chart-bar w-full" style="height: 60%;"></div>
+                        <div class="mockup-chart-bar w-full" style="height: 85%;"></div>
+                        <div class="mockup-chart-bar w-full" style="height: 90%;"></div>
+                        <div class="mockup-chart-bar w-full" style="height: 70%;"></div>
+                        <div class="mockup-chart-bar w-full" style="height: 80%;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="section-container bg-white/5">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16 fade-in-section">
+                    <h2 class="section-title">Tudo o que você precisa, em um só lugar</h2>
+                    <p class="section-subtitle">Recursos poderosos e intuitivos para otimizar a rotina de educadores e gestores.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="feature-card fade-in-section">
+                        <h3 class="font-bold text-xl text-white mb-3">Planejamento Inteligente</h3>
+                        <p class="text-slate-400">Crie planos de aula, anexe materiais, alinhe com a BNCC e compartilhe com suas turmas em poucos cliques.</p>
+                    </div>
+                    <div class="feature-card fade-in-section">
+                        <h3 class="font-bold text-xl text-white mb-3">Acompanhamento em Tempo Real</h3>
+                        <p class="text-slate-400">Dashboards visuais mostram o desempenho, a frequência e o engajamento de cada aluno, permitindo intervenções rápidas.</p>
+                    </div>
+                    <div class="feature-card fade-in-section">
+                        <h3 class="font-bold text-xl text-white mb-3">Comunicação Centralizada</h3>
+                        <p class="text-slate-400">Envie comunicados para turmas inteiras ou mensagens individuais para pais e alunos através de um portal seguro e integrado.</p>
+                    </div>
+                    <div class="feature-card fade-in-section">
+                        <h3 class="font-bold text-xl text-white mb-3">Integração com o Ecossistema</h3>
+                        <p class="text-slate-400">Atribua atividades do `FACILLIT games` e sincronize prazos e eventos escolares com o `FACILLIT day` dos alunos.</p>
+                    </div>
+                    <div class="feature-card fade-in-section">
+                        <h3 class="font-bold text-xl text-white mb-3">Avaliações e Feedback</h3>
+                        <p class="text-slate-400">Crie provas, testes e trabalhos. Dê feedback detalhado e lance as notas que são compiladas automaticamente em relatórios.</p>
+                    </div>
+                    <div class="feature-card fade-in-section">
+                        <h3 class="font-bold text-xl text-white mb-3">Diário de Classe Digital</h3>
+                        <p class="text-slate-400">Registre o conteúdo de cada aula e a frequência dos alunos de forma rápida, segura e em conformidade com as exigências legais.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="para-quem" class="section-container">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12 fade-in-section">
+                    <h2 class="section-title">Feito para cada membro da comunidade escolar</h2>
+                </div>
+                <div class="flex flex-wrap justify-center gap-4 mb-12 fade-in-section">
+                    <button class="tab-button active" data-target="tab-professores">Para Professores</button>
+                    <button class="tab-button" data-target="tab-coordenadores">Para Coordenadores</button>
+                    <button class="tab-button" data-target="tab-escolas">Para Escolas</button>
+                </div>
+                <div class="max-w-3xl mx-auto p-10 rounded-2xl bg-slate-800/50 border border-white/10">
+                    <div id="tab-professores" class="tab-content">
+                        <h3 class="text-2xl font-bold text-white mb-4">Recupere seu tempo e foque no ensino</h3>
+                        <p>O FACILLIT edu automatiza o trabalho repetitivo. Você pode planejar o ano letivo em horas, não semanas, e usar os relatórios de desempenho para personalizar o aprendizado de cada aluno, identificando dificuldades antes que se tornem um problema.</p>
+                    </div>
+                    <div id="tab-coordenadores" class="tab-content hidden">
+                        <h3 class="text-2xl font-bold text-white mb-4">Visão 360° da sua equipe pedagógica</h3>
+                        <p>Acompanhe o planejamento de todos os professores, padronize a comunicação com as famílias e tenha acesso a dados consolidados de desempenho de todas as turmas. Tome decisões pedagógicas baseadas em dados, não em suposições.</p>
+                    </div>
+                    <div id="tab-escolas" class="tab-content hidden">
+                        <h3 class="text-2xl font-bold text-white mb-4">Uma gestão escolar moderna e integrada</h3>
+                        <p>Ofereça uma experiência digital de ponta para alunos, pais e professores. Centralize a comunicação, otimize processos acadêmicos e administrativos, e posicione sua instituição como uma referência em inovação educacional.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contato" class="section-container">
+            <div class="text-center">
+                <h2 class="text-4xl font-bold text-white">Pronto para revolucionar sua gestão educacional?</h2>
+                <p class="section-subtitle">Agende uma demonstração gratuita e personalizada com um de nossos especialistas e veja como o FACILLIT edu pode transformar sua instituição.</p>
+                <div class="mt-8">
+                    <a href="#" class="cta-button text-lg">Agendar Demonstração Agora</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-black/20 border-t border-white/10"><div class="container mx-auto px-8 py-12 text-center"><p class="text-slate-400 text-sm">© <span id="current-year"></span> FACILLIT hub. Todos os direitos reservados.</p></div></footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Observer para animações de fade-in
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            document.querySelectorAll('.fade-in-section').forEach(el => {
+                observer.observe(el);
+            });
+            
+            // Lógica das abas da seção "Para Quem?"
+            const tabButtons = document.querySelectorAll('.tab-button');
+            const tabContents = document.querySelectorAll('.tab-content');
+            tabButtons.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    tabButtons.forEach(t => t.classList.remove('active'));
+                    tab.classList.add('active');
+                    const targetId = tab.dataset.target;
+                    tabContents.forEach(content => {
+                        content.classList.add('hidden');
+                    });
+                    const targetContent = document.getElementById(targetId);
+                    if(targetContent) {
+                        targetContent.classList.remove('hidden');
+                    }
+                });
+            });
+
+            // Atualiza o ano no rodapé
+            const yearSpan = document.getElementById('current-year');
+            if (yearSpan) {
+                yearSpan.textContent = new Date().getFullYear();
+            }
+        });
+    </script>
+</body>
+</html>

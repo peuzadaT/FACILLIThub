@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo Acredita - Soluções Educacionais e de Produtividade</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50">
+    <header class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <svg class="w-8 h-8 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"></path>
+                </svg>
+                <h1 class="text-xl font-bold ml-2 text-gray-800">Grupo Acredita</h1>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#home" class="nav-link text-gray-700 hover:text-green-500 font-medium">Início</a>
+                <a href="#brands" class="nav-link text-gray-700 hover:text-green-500 font-medium">Nossas Marcas</a>
+                <a href="#integration" class="nav-link text-gray-700 hover:text-green-500 font-medium">Integração</a>
+                <a href="#about" class="nav-link text-gray-700 hover:text-green-500 font-medium">Sobre Nós</a>
+            </nav>
+           <div class="flex items-center">
+    <a 
+        href="login.html"
+        class="bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded-lg font-medium transition duration-300 ease-in-out transform hover:scale-105">
+        Acessar Plataformas
+    </a>
+    <button class="md:hidden ml-4 text-gray-600 focus:outline-none" id="menu-toggle">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                  d="M4 6h16M4 12h16M4 18h16">
+            </path>
+        </svg>
+    </button>
+</div>
+
+        <div class="md:hidden hidden bg-white w-full py-3 px-4 shadow-lg" id="mobile-menu">
+            <nav class="flex flex-col space-y-3">
+                <a href="#home" class="text-gray-700 hover:text-green-500 font-medium">Início</a>
+                <a href="#brands" class="text-gray-700 hover:text-green-500 font-medium">Nossas Marcas</a>
+                <a href="#integration" class="text-gray-700 hover:text-green-500 font-medium">Integração</a>
+                <a href="#about" class="text-gray-700 hover:text-green-500 font-medium">Sobre Nós</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="pt-24 pb-16 md:pt-32 md:pb-24 gradient-bg">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold text-white leading-tight mb-4">
+                        Transformando Educação e Produtividade
+                    </h1>
+                    <p class="text-xl text-white opacity-90 mb-8">
+                        Um ecossistema integrado de soluções para aprendizado, organização e desenvolvimento pessoal.
+                    </p>
+                    <div class="flex flex-col sm:flex-row justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
+                        <button class="bg-white text-green-600 hover:bg-gray-100 py-3 px-6 rounded-lg font-medium transition duration-300 ease-in-out transform hover:scale-105 shadow-lg">
+                            Conheça Nossas Marcas
+                        </button>
+                        <button class="bg-transparent border-2 border-white text-white hover:bg-white hover:text-green-600 py-3 px-6 rounded-lg font-medium transition duration-300 ease-in-out">
+                            Saiba Mais
+                        </button>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="relative">
+                        <svg class="w-full h-auto" viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                                    <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.3" />
+                                    <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0.1" />
+                                </linearGradient>
+                            </defs>
+                            <rect x="50" y="50" rx="20" ry="20" width="400" height="300" fill="url(#grad1)" />
+                            <circle cx="150" cy="150" r="50" fill="#ffffff" fill-opacity="0.2" />
+                            <circle cx="350" cy="250" r="70" fill="#ffffff" fill-opacity="0.2" />
+                            <path d="M100,200 Q250,50 400,200" stroke="#ffffff" stroke-width="8" fill="none" stroke-opacity="0.5" />
+                            <g transform="translate(220, 180)">
+                                <path d="M30,0 L60,30 L30,60 L0,30 Z" fill="#ffffff" />
+                                <text x="30" y="35" font-family="Arial" font-size="16" fill="#3b82f6" text-anchor="middle">Grupo</text>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120">
+                <path fill="#ffffff" fill-opacity="1" d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <section id="brands" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Nossas Marcas</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Conheça as soluções do Grupo Acredita, desenvolvidas para transformar a forma como você aprende, ensina e se organiza.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="brand-card bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100">
+                    <div class="h-3 bg-blue-400"></div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <h3 class="text-2xl font-bold text-gray-800">Flyn</h3>
+                        </div>
+                        <p class="text-gray-600 italic mb-4">"Organize. Simplifique. Voe."</p>
+                        <p class="text-gray-700 mb-6">
+                            Gerenciador de vida e tarefas que integra finanças, hábitos, saúde, rotina e metas em uma única plataforma.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Produtividade</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Organização</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Bem-estar</span>
+                        </div>
+                        <button class="w-full bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg font-medium transition duration-300 ease-in-out">
+                            Conhecer Flyn
+                        </button>
+                    </div>
+                </div>
+
+                <div class="brand-card bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100">
+                    <div class="h-3 bg-green-400"></div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <h3 class="text-2xl font-bold text-gray-800">Escreva+</h3>
+                        </div>
+                        <p class="text-gray-600 italic mb-4">"Sua redação no topo."</p>
+                        <p class="text-gray-700 mb-6">
+                            Plataforma de prática e correção de redações com feedback detalhado por IA e professores para vestibulares e ENEM.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Redação</span>
+                            <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Vestibular</span>
+                            <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">ENEM</span>
+                        </div>
+                        <button class="w-full bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded-lg font-medium transition duration-300 ease-in-out">
+                            Conhecer Escreva+
+                        </button>
+                    </div>
+                </div>
+
+                <div class="brand-card bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100">
+                    <div class="h-3 bg-purple-400"></div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <h3 class="text-2xl font-bold text-gray-800">Lubra</h3>
+                        </div>
+                        <p class="text-gray-600 italic mb-4">"Aprender brincando."</p>
+                        <p class="text-gray-700 mb-6">
+                            Plataforma de jogos educativos que tornam o aprendizado mais dinâmico e divertido para crianças do ensino infantil ao fundamental.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">Jogos</span>
+                            <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">Educação</span>
+                            <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">Crianças</span>
+                        </div>
+                        <button class="w-full bg-purple-500 hover:bg-purple-600 text-white py-2 px-4 rounded-lg font-medium transition duration-300 ease-in-out">
+                            Conhecer Lubra
+                        </button>
+                    </div>
+                </div>
+
+                <div class="brand-card bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100">
+                    <div class="h-3 bg-indigo-400"></div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <h3 class="text-2xl font-bold text-gray-800">Edublox</h3>
+                        </div>
+                        <p class="text-gray-600 italic mb-4">"O planejamento que transforma."</p>
+                        <p class="text-gray-700 mb-6">
+                            Plataforma para planejamento pedagógico, acompanhamento de alunos e gestão educacional para professores e instituições.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm">Gestão</span>
+                            <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm">Professores</span>
+                            <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm">Pedagogia</span>
+                        </div>
+                        <button class="w-full bg-indigo-500 hover:bg-indigo-600 text-white py-2 px-4 rounded-lg font-medium transition duration-300 ease-in-out">
+                            Conhecer Edublox
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="integration" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Integração entre Plataformas</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Nossas soluções funcionam em conjunto, criando um ecossistema completo para educação e produtividade.
+                </p>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
+                <div class="border-b border-gray-200">
+                    <div class="flex">
+                        <button class="tab-btn px-6 py-4 text-lg font-medium border-b-2 active-tab" data-tab="ecosystem">
+                            Ecossistema
+                        </button>
+                        <button class="tab-btn px-6 py-4 text-lg font-medium text-gray-500 hover:text-green-500" data-tab="login">
+                            Login Único
+                        </button>
+                        <button class="tab-btn px-6 py-4 text-lg font-medium text-gray-500 hover:text-green-500" data-tab="tech">
+                            Integração Técnica
+                        </button>
+                    </div>
+                </div>
+
+                <div class="p-6 md:p-10">
+                    <div class="tab-content" id="ecosystem-content">
+                        <div class="flex flex-col md:flex-row items-center">
+                            <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                                <h3 class="text-2xl font-bold text-gray-800 mb-4">Um Ecossistema Completo</h3>
+                                <p class="text-gray-700 mb-6">
+                                    Todas as nossas plataformas compartilham a mesma base visual e de design, proporcionando uma experiência consistente e intuitiva para todos os usuários.
+                                </p>
+                                <p class="text-gray-700 mb-6">
+                                    Cada solução foi desenvolvida para atender necessidades específicas, mas juntas formam um ecossistema completo que potencializa o aprendizado e a produtividade.
+                                </p>
+                                <div class="flex flex-wrap gap-4">
+                                    <div class="flex items-center">
+                                        <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        <span class="text-gray-700">Design consistente</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        <span class="text-gray-700">Experiência unificada</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        <span class="text-gray-700">Navegação intuitiva</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="md:w-1/2">
+                                <div class="relative">
+                                    <svg class="w-full h-auto" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="200" cy="150" r="120" fill="#f3f4f6" />
+                                        <circle cx="200" cy="150" r="90" fill="#e5e7eb" />
+                                        <circle cx="200" cy="150" r="60" fill="#d1d5db" />
+                                        
+                                        <g transform="translate(200, 90)">
+                                            <circle cx="0" cy="0" r="25" fill="#3b82f6" />
+                                            <text x="0" y="5" font-family="Arial" font-size="12" fill="white" text-anchor="middle">🕊️</text>
+                                        </g>
+                                        
+                                        <g transform="translate(260, 180)">
+                                            <circle cx="0" cy="0" r="25" fill="#4ade80" />
+                                            <text x="0" y="5" font-family="Arial" font-size="12" fill="white" text-anchor="middle">✍️</text>
+                                        </g>
+                                        
+                                        <g transform="translate(140, 180)">
+                                            <circle cx="0" cy="0" r="25" fill="#a855f7" />
+                                            <text x="0" y="5" font-family="Arial" font-size="12" fill="white" text-anchor="middle">🎲</text>
+                                        </g>
+                                        
+                                        <g transform="translate(200, 150)">
+                                            <circle cx="0" cy="0" r="25" fill="#6366f1" />
+                                            <text x="0" y="5" font-family="Arial" font-size="12" fill="white" text-anchor="middle">📚</text>
+                                        </g>
+                                        
+                                        <line x1="200" y1="90" x2="200" y2="125" stroke="#94a3b8" stroke-width="2" />
+                                        <line x1="200" y1="175" x2="200" y2="210" stroke="#94a3b8" stroke-width="2" />
+                                        <line x1="225" y1="150" x2="260" y2="180" stroke="#94a3b8" stroke-width="2" />
+                                        <line x1="175" y1="150" x2="140" y2="180" stroke="#94a3b8" stroke-width="2" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-content hidden" id="login-content">
+                        <div class="flex flex-col md:flex-row items-center">
+                            <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                                <h3 class="text-2xl font-bold text-gray-800 mb-4">Login Único</h3>
+                                <p class="text-gray-700 mb-6">
+                                    Com apenas um cadastro, você tem acesso a todas as plataformas do Grupo Acredita, simplificando sua experiência e mantendo seus dados sincronizados.
+                                </p>
+                                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 mb-6">
+                                    <h4 class="font-medium text-gray-800 mb-2">Dois tipos de perfil:</h4>
+                                    <ul class="space-y-3">
+                                        <li class="flex items-start">
+                                            <svg class="w-5 h-5 text-green-500 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                            </svg>
+                                            <div>
+                                                <span class="font-medium">Perfil de Aluno:</span>
+                                                <span class="text-gray-600"> Acesso às plataformas Flyn, Escreva+ e Lubra com foco no aprendizado e organização pessoal.</span>
+                                            </div>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <svg class="w-5 h-5 text-green-500 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                            </svg>
+                                            <div>
+                                                <span class="font-medium">Perfil de Professor:</span>
+                                                <span class="text-gray-600"> Acesso ao Edublox e ferramentas avançadas para gestão educacional e acompanhamento de alunos.</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <button class="bg-green-500 hover:bg-green-600 text-white py-2 px-6 rounded-lg font-medium transition duration-300 ease-in-out">
+                                    Criar Conta
+                                </button>
+                            </div>
+                            <div class="md:w-1/2">
+                                <div class="bg-white rounded-xl shadow-lg p-6 border border-gray-200">
+                                    <div class="text-center mb-6">
+                                        <div class="inline-block p-3 bg-green-100 rounded-full mb-2">
+                                            <svg class="w-8 h-8 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z" clip-rule="evenodd"></path>
+                                            </svg>
+                                        </div>
+                                        <h3 class="text-xl font-bold text-gray-800 mb-1">Login Único</h3>
+                                        <p class="text-gray-600 mb-4">Acesse todas as plataformas</p>
+                                    </div>
+                                    <div class="space-y-4">
+                                        <div>
+                                            <label class="block text-gray-700 text-sm font-medium mb-1" for="email">
+                                                Email
+                                            </label>
+                                            <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500 transition duration-200" placeholder="seu@email.com">
+                                        </div>
+                                        <div>
+                                            <label class="block text-gray-700 text-sm font-medium mb-1" for="password">
+                                                Senha
+                                            </label>
+                                            <input type="password" id="password" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500 transition duration-200" placeholder="••••••••">
+                                        </div>
+                                        <div class="flex items-center justify-between">
+                                            <div class="flex items-center">
+                                                <input id="remember" type="checkbox" class="h-4 w-4 text-green-500 border-gray-300 rounded focus:ring-green-500">
+                                                <label for="remember" class="ml-2 block text-sm text-gray-700">
+                                                    Lembrar-me
+                                                </label>
+                                            </div>
+                                            <a href="#" class="text-sm font-medium text-green-600 hover:text-green-500">
+                                                Esqueceu a senha?
+                                            </a>
+                                        </div>
+                                        <button class="w-full bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded-lg font-medium transition duration-300 ease-in-out">
+                                            Entrar
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-content hidden" id="tech-content">
+                        <div class="flex flex-col md:flex-row items-center">
+                            <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                                <h3 class="text-2xl font-bold text-gray-800 mb-4">Integração Técnica</h3>
+                                <p class="text-gray-700 mb-6">
+                                    Nossas plataformas se comunicam entre si, criando um fluxo de informações que potencializa a experiência do usuário e facilita o acompanhamento do progresso.
+                                </p>
+                                <div class="space-y-4">
+                                    <div class="bg-blue-50 p-4 rounded-lg border border-blue-100">
+                                        <h4 class="font-medium text-blue-800 mb-2">Flyn + Escreva+</h4>
+                                        <p class="text-gray-700">As tarefas da Escreva+ aparecem automaticamente no seu gerenciador Flyn, mantendo tudo organizado em um só lugar.</p>
+                                    </div>
+                                    <div class="bg-purple-50 p-4 rounded-lg border border-purple-100">
+                                        <h4 class="font-medium text-purple-800 mb-2">Edublox + Lubra</h4>
+                                        <p class="text-gray-700">Professores podem acessar e gerenciar os jogos da Lubra diretamente pelo Edublox, integrando o conteúdo lúdico ao planejamento pedagógico.</p>
+                                    </div>
+                                    <div class="bg-indigo-50 p-4 rounded-lg border border-indigo-100">
+                                        <h4 class="font-medium text-indigo-800 mb-2">Edublox + Flyn</h4>
+                                        <p class="text-gray-700">O Edublox se comunica com o Flyn para acompanhamento global do desempenho e organização dos alunos.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="md:w-1/2">
+                                <div class="relative">
+                                    <svg class="w-full h-auto" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M100,100 C150,50 250,50 300,100" stroke="#3b82f6" stroke-width="3" fill="none" stroke-dasharray="5,5" />
+                                        <path d="M100,200 C150,250 250,250 300,200" stroke="#a855f7" stroke-width="3" fill="none" stroke-dasharray="5,5" />
+                                        <path d="M100,100 C100,150 100,150 100,200" stroke="#6366f1" stroke-width="3" fill="none" stroke-dasharray="5,5" />
+                                        <path d="M300,100 C300,150 300,150 300,200" stroke="#4ade80" stroke-width="3" fill="none" stroke-dasharray="5,5" />
+                                        
+                                        <g transform="translate(100, 100)">
+                                            <rect x="-40" y="-25" width="80" height="50" rx="10" fill="#3b82f6" />
+                                            <text x="0" y="5" font-family="Arial" font-size="14" fill="white" text-anchor="middle">🕊️ Flyn</text>
+                                        </g>
+                                        
+                                        <g transform="translate(300, 100)">
+                                            <rect x="-40" y="-25" width="80" height="50" rx="10" fill="#4ade80" />
+                                            <text x="0" y="5" font-family="Arial" font-size="14" fill="white" text-anchor="middle">✍️ Escreva+</text>
+                                        </g>
+                                        
+                                        <g transform="translate(100, 200)">
+                                            <rect x="-40" y="-25" width="80" height="50" rx="10" fill="#a855f7" />
+                                            <text x="0" y="5" font-family="Arial" font-size="14" fill="white" text-anchor="middle">🎲 Lubra</text>
+                                        </g>
+                                        
+                                        <g transform="translate(300, 200)">
+                                            <rect x="-40" y="-25" width="80" height="50" rx="10" fill="#6366f1" />
+                                            <text x="0" y="5" font-family="Arial" font-size="14" fill="white" text-anchor="middle">📚 Edublox</text>
+                                        </g>
+                                        
+                                        <g transform="translate(200, 75)">
+                                            <circle cx="0" cy="0" r="15" fill="white" stroke="#3b82f6" stroke-width="2" />
+                                            <text x="0" y="5" font-family="Arial" font-size="14" fill="#3b82f6" text-anchor="middle">↔️</text>
+                                        </g>
+                                        
+                                        <g transform="translate(200, 225)">
+                                            <circle cx="0" cy="0" r="15" fill="white" stroke="#a855f7" stroke-width="2" />
+                                            <text x="0" y="5" font-family="Arial" font-size="14" fill="#a855f7" text-anchor="middle">↔️</text>
+                                        </g>
+                                        
+                                        <g transform="translate(75, 150)">
+                                            <circle cx="0" cy="0" r="15" fill="white" stroke="#6366f1" stroke-width="2" />
+                                            <text x="0" y="5" font-family="Arial" font-size="14" fill="#6366f1" text-anchor="middle">↕️</text>
+                                        </g>
+                                        
+                                        <g transform="translate(325, 150)">
+                                            <circle cx="0" cy="0" r="15" fill="white" stroke="#4ade80" stroke-width="2" />
+                                            <text x="0" y="5" font-family="Arial" font-size="14" fill="#4ade80" text-anchor="middle">↕️</text>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Sobre o Grupo Acredita</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Somos um grupo empresarial dedicado a transformar a educação e a produtividade através de soluções tecnológicas inovadoras.
+                </p>
+            </div>
+
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <div class="relative">
+                        <div class="absolute -top-4 -left-4 w-24 h-24 bg-green-100 rounded-full"></div>
+                        <div class="absolute -bottom-4 -right-4 w-32 h-32 bg-blue-100 rounded-full"></div>
+                        <div class="relative z-10 bg-white p-6 rounded-xl shadow-lg border border-gray-100">
+                            <div class="flex justify-center mb-6">
+                                <svg class="w-24 h-24 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-bold text-center text-gray-800 mb-4">Nossa Missão</h3>
+                            <p class="text-gray-700 text-center">
+                                Transformar a forma como as pessoas aprendem, ensinam e se organizam, através de soluções tecnológicas inovadoras e integradas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Nossos Valores</h3>
+                    <div class="space-y-6">
+                        <div class="flex">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-green-100 text-green-600">
+                                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-medium text-gray-800">Inovação</h4>
+                                <p class="mt-2 text-gray-600">
+                                    Buscamos constantemente novas formas de melhorar a experiência de aprendizado e produtividade.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-100 text-blue-600">
+                                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-medium text-gray-800">Colaboração</h4>
+                                <p class="mt-2 text-gray-600">
+                                    Acreditamos no poder da integração e da colaboração para potencializar resultados.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-purple-100 text-purple-600">
+                                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+                                        <path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-medium text-gray-800">Educação</h4>
+                                <p class="mt-2 text-gray-600">
+                                    Comprometidos com a transformação da educação através da tecnologia e da inovação.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 gradient-bg">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Pronto para transformar sua experiência?</h2>
+            <p class="text-xl text-white opacity-90 mb-8 max-w-3xl mx-auto">
+                Junte-se ao ecossistema Grupo Acredita e descubra como nossas soluções podem potencializar seu aprendizado e produtividade.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <button class="bg-white text-green-600 hover:bg-gray-100 py-3 px-8 rounded-lg font-medium transition duration-300 ease-in-out transform hover:scale-105 shadow-lg">
+                    Criar Conta
+                </button>
+                <button class="bg-transparent border-2 border-white text-white hover:bg-white hover:text-green-600 py-3 px-8 rounded-lg font-medium transition duration-300 ease-in-out">
+                    Conhecer Plataformas
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <svg class="w-8 h-8 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"></path>
+                        </svg>
+                        <h2 class="text-xl font-bold ml-2">Grupo Acredita</h2>
+                    </div>
+                    <p class="text-gray-400 mb-4">
+                        Transformando educação e produtividade através de soluções tecnológicas inovadoras.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Nossas Plataformas</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-green-400 transition duration-300">🕊️ Flyn</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-green-400 transition duration-300">✍️ Escreva+</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-green-400 transition duration-300">🎲 Lubra</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-green-400 transition duration-300">📚 Edublox</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Links Úteis</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-green-400 transition duration-300">Sobre Nós</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-green-400 transition duration-300">Carreiras</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-green-400 transition duration-300">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-green-400 transition duration-300">Contato</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contato</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-green-400 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-400">São Paulo, SP - Brasil</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-green-400 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                            </svg>
+                            <span class="text-gray-400">contato@grupoacredita.com.br</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-green-400 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+                            </svg>
+                            <span class="text-gray-400">(11) 9999-9999</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">
+                    &copy; 2023 Grupo Acredita. Todos os direitos reservados.
+                </p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-green-400 text-sm transition duration-300">Termos de Uso</a>
+                    <a href="#" class="text-gray-400 hover:text-green-400 text-sm transition duration-300">Política de Privacidade</a>
+                    <a href="#" class="text-gray-400 hover:text-green-400 text-sm transition duration-300">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

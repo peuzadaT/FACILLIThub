@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidade - FACILLIT hub</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --color-primary: #ff3131;
+            --color-secondary: #ff914d;
+            --bg-dark: #0d1117;
+            --text-light: #d1d5db;
+            --text-muted: #6b7280;
+            --border-color: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+        }
+        
+        header { 
+            background: rgba(13, 17, 23, 0.5);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .main-layout { display: grid; grid-template-columns: 1fr; gap: 4rem; }
+        @media (min-width: 1024px) { .main-layout { grid-template-columns: 1fr 3fr; } }
+        
+        .sticky-nav { position: sticky; top: 8rem; align-self: start; }
+        .sticky-nav a { display: block; padding: 0.75rem 1rem; border-radius: 0.5rem; color: var(--text-muted); font-weight: 500; transition: all 0.3s ease; border-left: 3px solid transparent; }
+        .sticky-nav a:hover { background-color: rgba(255, 255, 255, 0.05); color: white; }
+        .sticky-nav a.active { color: var(--color-secondary); font-weight: 600; background-color: rgba(255, 145, 77, 0.08); border-left-color: var(--color-secondary); }
+
+        .content-article section:not(:last-child) { padding-bottom: 3rem; border-bottom: 1px solid var(--border-color); margin-bottom: 3rem; }
+        .content-article h2 { font-size: 1.875rem; font-weight: 700; color: #ffffff; margin-bottom: 1.5rem; }
+        .content-article h3 { font-size: 1.25rem; font-weight: 600; color: #e5e7eb; margin-top: 2rem; margin-bottom: 1rem; }
+        .content-article p, .content-article li { line-height: 1.8; font-size: 1rem; color: var(--text-light); }
+        .content-article ul { list-style-type: disc; padding-left: 1.5rem; margin-top: 1rem; }
+        .content-article strong { color: #ffffff; font-weight: 600; }
+        .content-article a { color: var(--color-secondary); text-decoration: underline; transition: color 0.3s; }
+        .content-article a:hover { color: var(--color-primary); }
+
+        /* Estilos para a nova tabela */
+        .data-table { width: 100%; margin-top: 2rem; border-collapse: collapse; }
+        .data-table th, .data-table td { padding: 1rem; text-align: left; border-bottom: 1px solid var(--border-color); }
+        .data-table th { font-weight: 600; color: #ffffff; background-color: rgba(255,255,255,0.05); }
+        .data-table td { vertical-align: top; }
+    </style>
+</head>
+<body class="antialiased">
+    <header class="sticky top-0 w-full z-50">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="/images/isotipo gradient(png).png" alt="FACILLIT hub Logo" class="w-10 h-10">
+                <span class="text-xl font-bold text-white">FACILLIT hub</span>
+            </a>
+            <a href="index.html" class="bg-white text-black font-bold py-2 px-5 rounded-full hover:bg-red-500 hover:text-white transition-all duration-300">
+                Voltar ao Site
+            </a>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-4 py-16">
+        <div class="main-layout">
+            <aside class="sticky-nav">
+                <h3 class="font-bold text-white text-lg mb-4 px-4">Tópicos da Política</h3>
+                <nav id="terms-nav">
+                    <a href="#section-1" class="nav-link active">1. Compromisso e Dados</a>
+                    <a href="#section-2" class="nav-link">2. Dados de Crianças</a>
+                    <a href="#section-3" class="nav-link">3. Uso e Compartilhamento</a>
+                    <a href="#section-4" class="nav-link">4. Seus Direitos</a>
+                    <a href="#section-5" class="nav-link">5. Segurança e Cookies</a>
+                    <a href="#section-6" class="nav-link">6. Contato e Alterações</a>
+                </nav>
+            </aside>
+
+            <article class="content-article">
+                <div class="mb-12">
+                    <h1 class="text-5xl font-extrabold text-white">Política de Privacidade</h1>
+                    <p class="text-lg text-gray-400 mt-2">Data da Última Atualização: 28 de maio de 2025</p>
+                </div>
+
+                <section id="section-1">
+                    <h2>1. Compromisso, Abrangência e Dados Coletados</h2>
+                    <h3>1.1. Nosso Compromisso com sua Privacidade</h3>
+                    <p>Sua privacidade é uma prioridade fundamental para o FACILLIT hub.  Esta Política de Privacidade descreve de forma clara e transparente como coletamos, usamos, armazenamos, compartilhamos e protegemos seus dados pessoais.  Nosso compromisso é tratar suas informações com o máximo de cuidado e respeito, em estrita conformidade com a Lei Geral de Proteção de Dados Pessoais (LGPD) e o Marco Civil da Internet. </p>
+                    <h3>1.2. Aplicabilidade</h3>
+                    <p>Esta política se aplica a todos os dados pessoais tratados pelo FACILLIT hub, coletados por meio de todos os nossos sites, aplicativos e serviços que compõem o ecossistema. </p>
+                    <h3>1.3. Quais Dados Coletamos e Por Quê?</h3>
+                    <p>A coleta de dados no FACILLIT hub é guiada pelos princípios da finalidade, adequação e necessidade.  Isso significa que coletamos apenas os dados essenciais para fornecer e aprimorar nossos serviços.  A tabela abaixo detalha os dados coletados em cada pilar do nosso ecossistema. </p>
+                    
+                    <div class="overflow-x-auto">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Pilar do Ecossistema</th>
+                                    <th>Tipo de Dado Coletado</th>
+                                    <th>Finalidade do Tratamento</th>
+                                    <th>Base Legal (LGPD)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Cadastro Geral (Todos)</strong></td>
+                                    <td>Nome completo, e-mail, senha criptografada, dados de perfil (opcionais).</td>
+                                    <td>Identificar o usuário, criar e proteger a conta, permitir o login, enviar comunicações essenciais sobre o serviço.</td>
+                                    <td>Execução de Contrato.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>FACILLIT day / write</strong></td>
+                                    <td>Metas, tarefas, diários, hábitos, redações, temas, notas e comentários.</td>
+                                    <td>Fornecer a funcionalidade de organização pessoal e permitir a submissão e correção de redações com feedback pedagógico.</td>
+                                    <td>Execução de Contrato.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>FACILLIT games (Criança)</strong></td>
+                                    <td>Nome/apelido (escolhido pelo responsável), faixa etária, progresso e desempenho nos jogos.</td>
+                                    <td>Personalizar a experiência de aprendizado, adaptar o nível de dificuldade e permitir o acompanhamento pelo responsável.</td>
+                                    <td>Consentimento específico do Responsável Legal.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>FACILLIT edu (Aluno via Instituição)</strong></td>
+                                    <td>Nome, turma, notas, frequência, atividades realizadas, comunicações.</td>
+                                    <td>Viabilizar a gestão pedagógica e administrativa pela instituição de ensino (Controladora).</td>
+                                    <td>A FACILLIT atua como Operador. A base legal da instituição é tipicamente a Execução de Contrato educacional ou Legítimo Interesse.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Pagamentos</strong></td>
+                                    <td>Dados do cartão (processados por parceiro), nome, CPF, endereço de cobrança.</td>
+                                    <td>Processar transações financeiras e cumprir obrigações fiscais.</td>
+                                    <td>Execução de Contrato; Cumprimento de Obrigação Legal.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Navegação e Uso</strong></td>
+                                    <td>Endereço IP, tipo de dispositivo, cookies, páginas visitadas, tempo de uso.</td>
+                                    <td>Garantir a segurança, prevenir fraudes, diagnosticar problemas técnicos e analisar o uso agregado para melhorias.</td>
+                                    <td>Legítimo Interesse; Consentimento (para cookies não essenciais).</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <section id="section-2">
+                    <h2>2. Tratamento de Dados de Crianças e Adolescentes</h2>
+                    <p>Cuidamos dos dados dos nossos usuários mais jovens com observância estrita à LGPD e ao Estatuto da Criança e do Adolescente.  O princípio do melhor interesse da criança e do adolescente orienta todas as nossas decisões. </p>
+                    <h3>2.2. Consentimento Parental</h3>
+                    <p>O tratamento de dados de crianças (menores de 12 anos) na plataforma FACILLIT games só é realizado mediante o consentimento específico e informado de pelo menos um dos pais ou do responsável legal. </p>
+                    <h3>2.3. Dados Coletados de Crianças</h3>
+                    <p>Coletamos o mínimo de informações necessárias para a participação nas atividades do FACILLIT games e jamais condicionamos o acesso a um jogo ao fornecimento de dados não essenciais.  As informações sobre os tipos de dados coletados são mantidas de forma pública e acessível. </p>
+                    <h3>2.4. Direitos dos Pais e Responsáveis</h3>
+                    <p>O responsável legal tem o direito de, a qualquer momento, acessar os dados de seu filho, solicitar correções, revogar o consentimento e pedir a eliminação dos dados. </p>
+                </section>
+
+                <section id="section-3">
+                    <h2>3. Como Usamos e Compartilhamos seus Dados</h2>
+                    <h3>3.1. Finalidades do Uso</h3>
+                    <p>Utilizamos os dados para operar os serviços, personalizar a experiência, comunicar avisos importantes e, com seu consentimento, marketing, além de garantir a segurança e realizar pesquisas com dados agregados e anonimizados. </p>
+                    <h3>3.2. Compartilhamento Dentro do Ecossistema</h3>
+                    <p>Para que a integração funcione, alguns dados são compartilhados entre as plataformas, como os dados de login para permitir um acesso unificado.  No entanto, o compartilhamento respeita o princípio da finalidade, o que significa que não usaremos dados de um serviço para outro sem uma base legal clara. </p>
+                    <h3>3.3. Compartilhamento com Terceiros</h3>
+                    <p>Não vendemos seus dados.  O compartilhamento ocorre apenas com provedores de serviços essenciais (como hospedagem em nuvem e processadores de pagamento), com os quais exigimos o mesmo nível de segurança , com instituições de ensino (no caso do FACILLIT edu) , ou em resposta a solicitações de autoridades legais.</p>
+                </section>
+
+                <section id="section-4">
+                    <h2>4. Seus Direitos de Privacidade (Direitos do Titular)</h2>
+                    <p>A LGPD garante a você uma série de direitos sobre seus dados.  A qualquer momento, você pode solicitar: a confirmação do tratamento, o acesso aos dados, a correção de informações, a anonimização ou eliminação de dados desnecessários, a portabilidade, a eliminação de dados tratados com seu consentimento, informação sobre compartilhamento e a revogação do consentimento. </p>
+                    <h3>4.2. Como Exercer Seus Direitos</h3>
+                    <p>Para exercer seus direitos, entre em contato conosco através do e-mail <a href="mailto:privacidade@facillithub.com.br">privacidade@facillithub.com.br</a> ou acesse nosso "Portal de Privacidade" em sua área de usuário. </p>
+                </section>
+                
+                <section id="section-5">
+                    <h2>5. Segurança, Retenção de Dados e Cookies</h2>
+                    <h3>5.1. Segurança da Informação</h3>
+                    <p>Adotamos medidas técnicas e administrativas robustas para proteger seus dados, incluindo criptografia e controles de acesso rigorosos. </p>
+                    <h3>5.2. Retenção de Dados</h3>
+                    <p>Reteremos seus dados apenas pelo tempo necessário para cumprir as finalidades para as quais foram coletados ou para cumprir obrigações legais, como a guarda de registros de acesso por 6 meses, conforme exige o Marco Civil da Internet.  Após o período, os dados são excluídos ou anonimizados. </p>
+                    <h3>5.3. Política de Cookies</h3>
+                    <p>Utilizamos cookies essenciais (para funcionamento básico), de análise (para entender o uso e melhorar o site) e de marketing (para publicidade relevante).  Você pode gerenciar suas preferências através do nosso banner de cookies. </p>
+                </section>
+                
+                <section id="section-6">
+                    <h2>6. Contato, DPO e Alterações na Política</h2>
+                    <h3>6.1. Encarregado de Proteção de Dados (DPO)</h3>
+                    <p>Nomeamos um Encarregado pela Proteção de Dados (DPO) para supervisionar nossa conformidade com a LGPD e atuar como seu canal de comunicação. </p>
+                    <ul>
+                        <li><strong>Nome do DPO:</strong> [Nome a ser preenchido]</li>
+                        <li><strong>E-mail de Contato:</strong> [E-mail a ser preenchido]</li>
+                    </ul>
+                    <h3>6.2. Dúvidas e Contato</h3>
+                    <p>Para qualquer dúvida sobre esta política, entre em contato pelo e-mail: <a href="mailto:privacidade@facillithub.com.br">privacidade@facillithub.com.br</a>. </p>
+                </section>
+
+            </article>
+        </div>
+    </main>
+    
+    <footer class="bg-black/20 border-t border-white/10 mt-12">
+        <div class="container mx-auto px-8 py-12 text-center">
+             <p class="text-slate-400 text-sm">© <span id="current-year"></span> FACILLIT hub. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const navLinks = document.querySelectorAll('.nav-link');
+            const sections = document.querySelectorAll('.content-article section');
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const id = entry.target.getAttribute('id');
+                        document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
+                        const activeLink = document.querySelector(`.nav-link[href="#${id}"]`);
+                        if(activeLink) activeLink.classList.add('active');
+                    }
+                });
+            }, { rootMargin: '-40% 0px -55% 0px', threshold: 0 });
+
+            sections.forEach(section => observer.observe(section));
+            
+            navLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    document.querySelector(link.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+                });
+            });
+
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+        });
+    </script>
+</body>
+</html>

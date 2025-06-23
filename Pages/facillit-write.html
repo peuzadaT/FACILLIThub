@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FACILLIT write - Redação Nota 1000</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --color-primary: #ff3131;
+            --color-secondary: #ff914d;
+            --bg-dark: #0d1117;
+            --bg-glass: rgba(22, 27, 34, 0.7);
+            --border-glass: rgba(255, 255, 255, 0.1);
+            --text-light: #e2e8f0;
+            --text-muted: #94a3b8;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+        }
+        
+        .section-container { padding: 6rem 1rem; position: relative; overflow: hidden; }
+        .section-title { font-size: 2.5rem; line-height: 1.2; font-weight: 800; color: #fff; }
+        .section-subtitle { font-size: 1.125rem; color: var(--text-muted); margin-top: 1rem; max-width: 42rem; margin-left: auto; margin-right: auto; }
+        
+        header { background: rgba(13, 17, 23, 0.5); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-bottom: 1px solid var(--border-glass); }
+        
+        .cta-button { background: linear-gradient(90deg, var(--color-primary), var(--color-secondary)); color: #fff; font-weight: 700; padding: 0.6rem 1.5rem; border-radius: 9999px; transition: all 0.3s; }
+        .cta-button:hover { box-shadow: 0 0 20px var(--color-primary); transform: scale(1.05); }
+
+        /* Mockup da Interface de Correção */
+        .mockup-write {
+            background: #161b22;
+            border-radius: 1rem;
+            border: 1px solid var(--border-glass);
+            box-shadow: 0 20px 50px -20px rgba(0,0,0,0.5);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1px;
+            background-color: var(--border-glass);
+            overflow: hidden;
+        }
+        .mockup-write-text { background-color: #0d1117; padding: 1.5rem; }
+        .mockup-write-feedback { background-color: #161b22; padding: 1.5rem; }
+        .highlighted-text { background-color: rgba(255, 145, 77, 0.15); border-radius: 4px; }
+        
+        .feature-card { border: 1px solid var(--border-glass); border-radius: 1rem; padding: 2rem; transition: all 0.3s; }
+        .feature-card:hover { transform: translateY(-5px); background-color: rgba(255,255,255,0.03); }
+
+        .how-it-works-step { border-left: 3px solid var(--border-glass); transition: border-color 0.3s; }
+        .how-it-works-step:hover { border-color: var(--color-primary); }
+
+        .fade-in-section { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
+        .fade-in-section.is-visible { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+<body class="antialiased">
+    <header class="sticky top-0 w-full z-50">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="/images/plataformas/write.png" alt="FACILLIT hub Logo" class="w-10 h-10">
+               <div class="text-xl font-bold text-white">
+    FACILLIT <span class="bg-gradient-to-r from-[#ff3131] to-[#f97316] text-transparent bg-clip-text font-bold">write</span>
+</div>
+            </a>
+            <div class="hidden md:flex items-center gap-8 font-medium text-slate-300">
+                <a href="#como-funciona" class="hover:text-white transition-colors">Como Funciona</a>
+                <a href="#features" class="hover:text-white transition-colors">Recursos</a>
+                <a href="index.html#planos" class="hover:text-white transition-colors">Preços</a>
+            </div>
+            <a href="index.html#planos" class="cta-button">
+                Começar a Escrever
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="section-container text-center pt-24 md:pt-32">
+            <div class="container mx-auto px-4">
+                <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight max-w-4xl mx-auto">Sua Redação Nota 1000 Começa Aqui</h1>
+                <p class="section-subtitle">Receba feedback instantâneo da nossa Inteligência Artificial e correções detalhadas de especialistas em bancas do ENEM e dos maiores vestibulares do país.</p>
+                <div class="mt-8">
+                    <a href="#planos" class="cta-button text-lg">Enviar minha primeira redação</a>
+                </div>
+
+                <div class="mockup-write max-w-5xl mx-auto mt-16 text-left fade-in-section">
+                    <div class="mockup-write-text">
+                        <h4 class="font-semibold text-white mb-4">Seu Texto</h4>
+                        <p class="text-sm text-slate-400 leading-relaxed">
+                            A priori, a questão da segurança pública no Brasil configura-se como um desafio complexo. <span class="highlighted-text">É evidente a necessidade de uma abordagem multifacetada</span>, que transcenda o mero policiamento ostensivo. Nesse contexto, a desigualdade social emerge como um fator preponderante na perpetuação da violência, criando um ciclo vicioso de exclusão e criminalidade...
+                        </p>
+                    </div>
+                    <div class="mockup-write-feedback">
+                        <h4 class="font-semibold text-white mb-4">Feedback do Corretor</h4>
+                        <div class="p-3 bg-red-500/10 border border-red-500/30 rounded-lg">
+                            <p class="text-sm font-semibold text-red-300">Competência III - Argumentação</p>
+                            <p class="text-xs text-slate-300 mt-1">Ótimo uso da expressão "abordagem multifacetada". Para fortalecer seu argumento, tente conectar essa ideia a um exemplo concreto ou a um dado estatístico na próxima frase.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="como-funciona" class="section-container">
+             <div class="container mx-auto px-4">
+                <div class="text-center mb-16 fade-in-section">
+                    <h2 class="section-title">A evolução da sua escrita em 4 passos</h2>
+                    <p class="section-subtitle">Nosso processo foi desenhado para ser simples, rápido e incrivelmente eficaz.</p>
+                </div>
+                <div class="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-16">
+                    <div class="how-it-works-step pl-6 fade-in-section">
+                        <strong class="text-3xl font-black text-red-400">1</strong>
+                        <h3 class="font-bold text-xl text-white mt-2 mb-2">Escolha o Tema</h3>
+                        <p class="text-slate-400">Navegue por centenas de temas atualizados, dos mais quentes da atualidade aos eixos temáticos que mais caem nas provas.</p>
+                    </div>
+                     <div class="how-it-works-step pl-6 fade-in-section">
+                        <strong class="text-3xl font-black text-red-400">2</strong>
+                        <h3 class="font-bold text-xl text-white mt-2 mb-2">Escreva e Envie</h3>
+                        <p class="text-slate-400">Digite sua redação em nossa plataforma ou envie uma foto do seu rascunho. Nossa tecnologia transcreve para você.</p>
+                    </div>
+                     <div class="how-it-works-step pl-6 fade-in-section">
+                        <strong class="text-3xl font-black text-red-400">3</strong>
+                        <h3 class="font-bold text-xl text-white mt-2 mb-2">Feedback da IA</h3>
+                        <p class="text-slate-400">Em segundos, nossa IA analisa sua gramática, coesão e uso de repertório, apontando os primeiros ajustes.</p>
+                    </div>
+                     <div class="how-it-works-step pl-6 fade-in-section">
+                        <strong class="text-3xl font-black text-red-400">4</strong>
+                        <h3 class="font-bold text-xl text-white mt-2 mb-2">Análise do Especialista</h3>
+                        <p class="text-slate-400">Em até 48h, um corretor especializado envia uma análise detalhada, com um plano de ação para você evoluir.</p>
+                    </div>
+                </div>
+             </div>
+        </section>
+
+        <section id="features" class="section-container bg-white/5">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16 fade-in-section">
+                    <h2 class="section-title">Ferramentas para uma escrita de excelência</h2>
+                    <p class="section-subtitle">Vamos além da correção. Oferecemos recursos para você pensar e argumentar melhor.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="feature-card fade-in-section">
+                        <h3 class="font-bold text-xl text-white mb-3">Correção Híbrida</h3>
+                        <p class="text-slate-400">A velocidade da Inteligência Artificial para ajustes rápidos e a profundidade de um corretor humano para a análise estratégica.</p>
+                    </div>
+                    <div class="feature-card fade-in-section">
+                        <h3 class="font-bold text-xl text-white mb-3">Análise de Desempenho</h3>
+                        <p class="text-slate-400">Acompanhe sua evolução em cada uma das 5 competências do ENEM através de gráficos e relatórios detalhados.</p>
+                    </div>
+                    <div class="feature-card fade-in-section">
+                        <h3 class="font-bold text-xl text-white mb-3">Banco de Temas Infinito</h3>
+                        <p class="text-slate-400">Acesse uma biblioteca com centenas de temas de redação, todos comentados e com textos de apoio selecionados.</p>
+                    </div>
+                    <div class="feature-card fade-in-section">
+                        <h3 class="font-bold text-xl text-white mb-3">Guia de Repertório</h3>
+                        <p class="text-slate-400">Para cada tema, sugerimos citações, dados históricos e conceitos filosóficos para enriquecer sua argumentação.</p>
+                    </div>
+                    <div class="feature-card fade-in-section">
+                        <h3 class="font-bold text-xl text-white mb-3">Comparativo de Versões</h3>
+                        <p class="text-slate-400">Compare facilmente as diferentes versões da sua redação para visualizar seu progresso e o impacto das correções.</p>
+                    </div>
+                    <div class="feature-card fade-in-section">
+                        <h3 class="font-bold text-xl text-white mb-3">Aulas de Redação</h3>
+                        <p class="text-slate-400">Assista a aulas em vídeo com nossos melhores professores, cobrindo desde a estrutura do texto até os erros mais comuns.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section-container">
+            <div class="text-center">
+                <h2 class="text-4xl font-bold text-white max-w-2xl mx-auto">Pronto para transformar sua nota de redação?</h2>
+                <p class="section-subtitle">Escolha um plano e envie seu primeiro texto hoje mesmo. A vaga na universidade dos seus sonhos está mais perto do que você imagina.</p>
+                <div class="mt-8">
+                    <a href="index.html#planos" class="cta-button text-lg">Ver Planos e Preços</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-black/20 border-t border-white/10"><div class="container mx-auto px-8 py-12 text-center"><p class="text-slate-400 text-sm">© <span id="current-year"></span> FACILLIT hub. Todos os direitos reservados.</p></div></footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Observer para animações de fade-in
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            document.querySelectorAll('.fade-in-section').forEach(el => {
+                observer.observe(el);
+            });
+
+            // Atualiza o ano no rodapé
+            const yearSpan = document.getElementById('current-year');
+            if (yearSpan) {
+                yearSpan.textContent = new Date().getFullYear();
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FACILLIT day - Sua Vida, em um só lugar</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --color-primary: #ff3131;
+            --color-secondary: #ff914d;
+            --bg-dark: #0d1117;
+            --bg-glass: rgba(22, 27, 34, 0.7);
+            --border-glass: rgba(255, 255, 255, 0.1);
+            --text-light: #e2e8f0;
+            --text-muted: #94a3b8;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+        }
+        
+        .section-container { padding: 6rem 1rem; position: relative; overflow: hidden; }
+        .section-title { font-size: 2.5rem; line-height: 1.2; font-weight: 800; color: #fff; }
+        .section-subtitle { font-size: 1.125rem; color: var(--text-muted); margin-top: 1rem; max-w: 42rem; margin-left: auto; margin-right: auto; }
+        
+        header { background: rgba(13, 17, 23, 0.5); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-bottom: 1px solid var(--border-glass); }
+        
+        .cta-button { background: linear-gradient(90deg, var(--color-primary), var(--color-secondary)); color: #fff; font-weight: 700; padding: 0.6rem 1.5rem; border-radius: 9999px; transition: all 0.3s; }
+        .cta-button:hover { box-shadow: 0 0 20px var(--color-primary); transform: scale(1.05); }
+
+        /* Mockup do Dashboard */
+        .dashboard-mockup {
+            background: linear-gradient(145deg, #1f2937, #111827);
+            border-radius: 1rem;
+            border: 1px solid var(--border-glass);
+            box-shadow: 0 20px 50px -20px rgba(0,0,0,0.5);
+            transform: perspective(2000px) rotateX(10deg);
+            transition: transform 0.5s ease-out;
+        }
+        .dashboard-mockup:hover {
+            transform: perspective(2000px) rotateX(0deg);
+        }
+
+        .widget { background-color: #0d1117; border-radius: 0.75rem; border: 1px solid var(--border-glass); padding: 1rem; }
+        
+        .feature-card { border: 1px solid var(--border-glass); border-radius: 1rem; padding: 2rem; transition: all 0.3s; }
+        .feature-card:hover { transform: translateY(-5px); background-color: rgba(255,255,255,0.03); }
+
+        .fade-in-section { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
+        .fade-in-section.is-visible { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+<body class="antialiased">
+    <header class="sticky top-0 w-full z-50">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="/images/plataformas/day.png" alt="FACILLIT hub Logo" class="w-10 h-10">
+                <div class="text-xl font-bold text-white">
+    FACILLIT <span class="bg-gradient-to-r from-[#ff3131] to-[#f97316] text-transparent bg-clip-text font-bold">day</span>
+</div>
+            </a>
+            <div class="hidden md:flex items-center gap-8 font-medium text-slate-300">
+                <a href="#features" class="hover:text-white transition-colors">Recursos</a>
+                <a href="index.html#integracao" class="hover:text-white transition-colors">Integrações</a>
+                <a href="index.html#planos" class="hover:text-white transition-colors">Preços</a>
+            </div>
+            <a href="index.html#planos" class="cta-button">
+                Criar meu Dashboard
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="section-container text-center pt-24 md:pt-32">
+            <div class="container mx-auto px-4">
+                <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight max-w-4xl mx-auto">Sua vida, em um só lugar. Finalmente.</h1>
+                <p class="section-subtitle">Conecte seus calendários, gerencie suas finanças, construa hábitos e planeje suas metas com uma clareza que você nunca viu. `day` é o seu sistema operacional para a vida.</p>
+                <div class="mt-8">
+                    <a href="#planos" class="cta-button text-lg">Crie seu dashboard grátis</a>
+                </div>
+
+                <div class="dashboard-mockup max-w-5xl mx-auto mt-16 text-left fade-in-section">
+                    <div class="p-4">
+                        <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+                            <div class="widget lg:col-span-2">
+                                <h4 class="font-semibold text-white mb-2">Metas do Trimestre</h4>
+                                <div class="space-y-2">
+                                    <p class="text-sm text-slate-300">Lançar novo projeto</p>
+                                    <div class="w-full bg-slate-700 rounded-full h-2.5"><div class="bg-gradient-to-r from-red-500 to-orange-500 h-2.5 rounded-full" style="width: 75%"></div></div>
+                                </div>
+                            </div>
+                            <div class="widget">
+                                <h4 class="font-semibold text-white mb-2">Hábitos em Dia 🔥</h4>
+                                <p class="text-3xl font-bold text-green-400">12 dias</p>
+                            </div>
+                            <div class="widget">
+                                <h4 class="font-semibold text-white mb-2">Balanço do Mês</h4>
+                                <p class="text-3xl font-bold text-cyan-400">+ R$ 1.250,80</p>
+                            </div>
+                            <div class="widget lg:col-span-2">
+                                <h4 class="font-semibold text-white mb-2">Próximas Tarefas</h4>
+                                <div class="space-y-2 text-sm text-slate-300">
+                                    <p>□ Reunião com equipe de design</p>
+                                    <p>□ Enviar relatório semanal</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="section-container bg-white/5">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16 fade-in-section">
+                    <h2 class="section-title">Um lugar para cada parte da sua vida</h2>
+                    <p class="section-subtitle">O `day` é dividido em módulos inteligentes que se conversam, criando uma visão 360° do seu progresso.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="feature-card fade-in-section">
+                        <h3 class="font-bold text-xl text-white mb-3">Metas com OKRs</h3>
+                        <p class="text-slate-400">Defina e acompanhe seus Objetivos e Resultados-Chave. Da sua carreira ao seu bem-estar, visualize seu progresso e mantenha o foco no que importa.</p>
+                    </div>
+                    <div class="feature-card fade-in-section">
+                        <h3 class="font-bold text-xl text-white mb-3">Tracker de Hábitos</h3>
+                        <p class="text-slate-400">Construa rotinas positivas com nosso tracker de hábitos. Celebre suas sequências (streaks) e entenda o que te impede de avançar.</p>
+                    </div>
+                    <div class="feature-card fade-in-section">
+                        <h3 class="font-bold text-xl text-white mb-3">Controle Financeiro</h3>
+                        <p class="text-slate-400">Conecte suas contas, categorize despesas e tenha uma visão clara da sua saúde financeira. Sem planilhas complicadas.</p>
+                    </div>
+                    <div class="feature-card fade-in-section">
+                        <h3 class="font-bold text-xl text-white mb-3">Agenda e Tarefas</h3>
+                        <p class="text-slate-400">Uma lista de tarefas que se integra ao seu calendário. Veja seu dia, semana e mês de forma unificada e nunca mais perca um prazo.</p>
+                    </div>
+                    <div class="feature-card fade-in-section">
+                        <h3 class="font-bold text-xl text-white mb-3">Diário e Notas</h3>
+                        <p class="text-slate-400">Um espaço para reflexão e criatividade. Anote ideias, faça um balanço do seu dia e guarde insights em um local seguro e organizado.</p>
+                    </div>
+                    <div class="feature-card fade-in-section">
+                        <h3 class="font-bold text-xl text-white mb-3">O Coração do Hub</h3>
+                        <p class="text-slate-400">O `day` se conecta ao `write` e `edu`, trazendo prazos de redações e eventos escolares diretamente para a sua agenda principal.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-container">
+            <div class="container mx-auto px-4">
+                <div class="text-center max-w-3xl mx-auto fade-in-section">
+                    <h2 class="section-title">Chega de pular entre dezenas de apps</h2>
+                    <p class="section-subtitle mt-6">Um app para tarefas, outro para o calendário, uma planilha para as finanças, um caderno para as metas... A fragmentação gera estresse e perda de foco. O FACILLIT day foi criado para ser a camada que unifica tudo isso.</p>
+                    <div class="mt-8">
+                        <a href="#planos" class="text-lg font-semibold text-orange-400 hover:text-red-400 transition-colors">Veja como o `day` pode simplificar sua vida →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section-container bg-gradient-to-r from-red-500 to-orange-500">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-4xl font-bold text-white max-w-2xl mx-auto">Pronto para assumir o controle?</h2>
+                <p class="text-xl text-white/80 mt-4 max-w-2xl mx-auto">Comece a usar o FACILLIT day gratuitamente e sinta a diferença de ter uma vida organizada e intencional.</p>
+                <div class="mt-8">
+                    <a href="index.html#planos" class="bg-white text-black font-bold py-3 px-8 rounded-full text-lg hover:bg-slate-200 transition-transform hover:scale-105">
+                        Criar minha conta grátis
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-black/20 border-t border-white/10"><div class="container mx-auto px-8 py-12 text-center"><p class="text-slate-400 text-sm">© <span id="current-year"></span> FACILLIT hub. Todos os direitos reservados.</p></div></footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Observer para animações de fade-in
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            document.querySelectorAll('.fade-in-section').forEach(el => {
+                observer.observe(el);
+            });
+
+            // Atualiza o ano no rodapé
+            const yearSpan = document.getElementById('current-year');
+            if (yearSpan) {
+                yearSpan.textContent = new Date().getFullYear();
+            }
+        });
+    </script>
+</body>
+</html>
