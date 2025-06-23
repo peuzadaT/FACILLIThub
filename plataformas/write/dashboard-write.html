@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - FACILLIT write</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="dashboard-write.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="antialiased">
+
+    <div id="main-layout" class="flex">
+        <aside id="sidebar" class="w-64 h-screen bg-black/20 fixed top-0 left-0 flex flex-col z-40">
+             <div class="flex items-center gap-3 px-6 h-16 border-b border-white/10 flex-shrink-0">
+                <img src="/images/plataformas/write.png" alt="Logo" class="w-8 h-8 flex-shrink-0">
+                <span class="nav-logo-text text-xl font-bold text-white">FACILLIT write</span>
+            </div>
+            <nav id="main-nav" class="flex-grow pt-6 space-y-1 overflow-y-auto">
+                <p class="px-6 text-xs font-semibold text-slate-400 uppercase tracking-wider">Principal</p>
+                <a href="#" class="nav-link active" data-target="page-dashboard"><svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path></svg><span class="nav-text">Painel Principal</span></a>
+                <a href="#" class="nav-link" data-target="page-escrever"><svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg><span class="nav-text">Nova Redação</span></a>
+                <a href="#" class="nav-link" data-target="page-redacoes"><svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V7M3 7l9-4 9 4M3 7l9 4v10M21 7l-9 4"></path></svg><span class="nav-text">Minhas Redações</span></a>
+                <p class="px-6 text-xs font-semibold text-slate-400 uppercase tracking-wider mt-4">Aprendizado</p>
+                <a href="#" class="nav-link" data-target="page-temas"><svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7"></path></svg><span class="nav-text">Banco de Temas</span></a>
+                <a href="#" class="nav-link" data-target="page-redacoes-nota-mil"><svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg><span class="nav-text">Redações Nota 1000</span></a>
+                <p class="px-6 text-xs font-semibold text-slate-400 uppercase tracking-wider mt-4">Desempenho</p>
+                <a href="#" class="nav-link" data-target="page-desempenho"><svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg><span class="nav-text">Meu Desempenho</span></a>
+                <a href="#" class="nav-link" data-target="page-conquistas"><svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M12 6V3m0 18v-3M5.636 5.636l1.414 1.414m10.05-.101l1.414-1.414M5.636 18.464l1.414-1.414m10.05 0l1.414 1.414M12 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg><span class="nav-text">Minhas Conquistas</span></a>
+            </nav>
+            <div class="nav-footer p-6 border-t border-white/10 flex-shrink-0">
+                <a href="#" class="nav-link" data-target="page-configuracoes"><svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.096 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg><span class="nav-text">Configurações</span></a>
+            </div>
+        </aside>
+
+        <div id="main-content" class="ml-64 flex-1 flex flex-col">
+            <header class="h-16 flex items-center justify-between px-6 border-b border-white/10 bg-black/10 backdrop-blur-sm sticky top-0 z-30">
+                <button id="sidebar-toggle"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7"></path></svg></button>
+                <div class="flex items-center gap-4"><span>Créditos de Correção: <strong>3</strong></span><div class="w-8 h-8 bg-gradient-to-r from-red-500 to-orange-500 rounded-full"></div></div>
+            </header>
+
+            <main class="flex-grow p-6">
+                <div id="page-dashboard" class="page-content">
+                     <h1 class="text-3xl font-bold text-white mb-6">Painel Principal</h1>
+                     <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                        <div class="lg:col-span-2 space-y-6">
+                            <div class="widget-card p-6">
+                                <h3 class="widget-title">Evolução de Notas</h3>
+                                <div class="h-64 mt-4" id="line-chart-container"></div>
+                            </div>
+                        </div>
+                        <div class="space-y-6">
+                            <div class="widget-card p-6">
+                                <h3 class="widget-title">Última Correção</h3>
+                                <p class="text-sm text-slate-400 mt-4">Tema: Desafios da valorização de povos tradicionais...</p>
+                                <p class="text-5xl font-extrabold text-green-400 mt-2">960</p>
+                                <button class="cta-button w-full mt-4">Ver Correção</button>
+                            </div>
+                             <div class="widget-card p-6">
+                                <h3 class="widget-title">Competências (ENEM)</h3>
+                                <div class="h-56 mt-2" id="radar-chart-container"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="page-escrever" class="page-content hidden"><h1 class="text-3xl font-bold text-white">Nova Redação</h1></div>
+                <div id="page-redacoes" class="page-content hidden"><h1 class="text-3xl font-bold text-white">Minhas Redações</h1></div>
+                <div id="page-temas" class="page-content hidden"><h1 class="text-3xl font-bold text-white">Banco de Temas</h1></div>
+                <div id="page-redacoes-nota-mil" class="page-content hidden"><h1 class="text-3xl font-bold text-white">Redações Nota 1000</h1></div>
+                <div id="page-desempenho" class="page-content hidden"><h1 class="text-3xl font-bold text-white">Meu Desempenho</h1></div>
+                <div id="page-conquistas" class="page-content hidden"><h1 class="text-3xl font-bold text-white">Minhas Conquistas</h1></div>
+                <div id="page-calendario" class="page-content hidden"><h1 class="text-3xl font-bold text-white">Calendário de Provas</h1></div>
+                <div id="page-configuracoes" class="page-content hidden"><h1 class="text-3xl font-bold text-white">Configurações</h1></div>
+            </main>
+        </div>
+    </div>
+    
+    <script src="dashboard-write.js"></script>
+</body>
+</html>

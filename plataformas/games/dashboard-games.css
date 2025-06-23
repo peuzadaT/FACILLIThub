@@ -1,0 +1,91 @@
+:root {
+    --color-primary: #ff3131;
+    --color-secondary: #ff914d;
+    --bg-dark: #161b22;
+    --bg-card: #0d1117;
+    --border-color: rgba(255, 255, 255, 0.1);
+    --text-light: #e2e8f0;
+    --text-muted: #8b949e;
+}
+body { font-family: 'Poppins', sans-serif; background-color: var(--bg-dark); color: var(--text-light); }
+.widget-card { background-color: var(--bg-card); border-radius: 1rem; border: 1px solid var(--border-color); }
+.widget-title { font-size: 1.125rem; font-weight: 600; color: white; }
+.widget-data { font-size: 2rem; font-weight: 700; color: white; }
+.section-title { font-size: 1.5rem; font-weight: 700; color: white; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem; }
+.cta-button { background-color: white; color: black; font-weight: 700; padding: 0.75rem 2rem; border-radius: 9999px; transition: all 0.3s; }
+.cta-button:hover { background-color: #ddd; transform: scale(1.05); }
+.game-header { background: linear-gradient(180deg, rgba(13,17,23,0.8) 0%, rgba(13,17,23,0) 100%); }
+.user-avatar { border: 2px solid white; box-shadow: 0 0 10px var(--color-secondary); }
+.points-counter { background-color: rgba(255,255,255,0.1); border-radius: 9999px; padding: 0.25rem 1rem; font-weight: 600; }
+.exit-button { background-color: rgba(139, 148, 158, 0.2); font-weight: 600; padding: 0.5rem 1rem; border-radius: 0.5rem; transition: background-color 0.2s; font-size: 0.875rem; }
+.exit-button:hover { background-color: rgba(139, 148, 158, 0.4); }
+.nav-button { font-size: 1rem; font-weight: 600; color: var(--text-muted); padding: 0.5rem 1rem; border-radius: 0.5rem; transition: all 0.2s; border: 2px solid transparent; }
+.nav-button:hover { color: white; background-color: rgba(255, 255, 255, 0.1); }
+.nav-button.active { color: white; border-bottom-color: var(--color-primary); }
+.page-content { animation: fadeIn 0.5s ease-in-out; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+.category-filter { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+.category-filter button { padding: 0.5rem 1.5rem; border-radius: 9999px; background-color: rgba(255,255,255,0.05); font-weight: 500; transition: all 0.2s ease; color: var(--text-muted); }
+.category-filter button:hover { background-color: rgba(255,255,255,0.1); color: white; }
+.category-filter button.active { background: linear-gradient(90deg, #4f46e5, #a21caf); color: white; font-weight: 700; }
+.featured-game-banner { border-radius: 1rem; background: linear-gradient(90deg, var(--color-primary), #4f46e5); min-height: 250px; display: flex; align-items: flex-end; }
+.mission-card { background-color: var(--bg-card); border: 1px solid var(--border-color); border-radius: 1rem; padding: 1.5rem; }
+.daily-reward-card { background: linear-gradient(45deg, #16a34a, #22c55e); border-radius: 1rem; padding: 1.5rem; text-align: center; }
+.games-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
+.game-card { background-color: var(--bg-card); border-radius: 1rem; height: 160px; }
+.mission-tasks { list-style-type: none; padding: 0; margin-top: 1rem; }
+.mission-tasks li { color: var(--text-muted); margin-top: 0.5rem; }
+.mission-tasks li:first-child { margin-top: 0; }
+.mission-tasks li.done { color: var(--text-light); text-decoration: line-through; }
+.mission-tasks li.done::before { content: '✓'; color: #22c55e; margin-right: 0.5rem; font-weight: 600; }
+.skill-name { font-size: 1rem; font-weight: 500; margin-bottom: 0.5rem; }
+.progress-bar-bg { width: 100%; background-color: rgba(255,255,255,0.1); border-radius: 9999px; height: 1.25rem; padding: 0.25rem; }
+.progress-bar { height: 100%; background: linear-gradient(90deg, var(--color-primary), var(--color-secondary)); border-radius: 9999px; transition: width 1s ease-out; }
+.parent-view-card { background-color: rgba(22, 163, 74, 0.1); border: 1px solid rgba(34, 197, 94, 0.4); border-radius: 1rem; }
+.calendar-heatmap { display: grid; grid-template-columns: repeat(7, 1fr); gap: 0.5rem; }
+.calendar-heatmap div { background-color: rgba(255,255,255,0.05); width: 100%; padding-bottom: 100%; border-radius: 0.25rem; }
+.calendar-heatmap div.active-1 { background-color: #0e4429; }
+.calendar-heatmap div.active-2 { background-color: #006d32; }
+.calendar-heatmap div.active-3 { background-color: #26a641; }
+.calendar-heatmap div.active-4 { background-color: #39d353; }
+.avatar-preview { width: 100%; max-width: 300px; aspect-ratio: 1 / 1; background: linear-gradient(45deg, var(--bg-card), #1f2937); border-radius: 1.5rem; border: 4px solid var(--border-color); display: flex; justify-content: center; align-items: center; padding: 2rem; transition: all 0.3s; }
+.avatar-img { width: 100%; height: 100%; }
+.shop-item { cursor: pointer; }
+.shop-item.owned { border-color: var(--color-secondary); }
+.shop-item.equipped { box-shadow: 0 0 20px var(--color-secondary); transform: scale(1.05); }
+.shop-item.locked { opacity: 0.4; pointer-events: none; position: relative; }
+.shop-item.locked::after { content: '🔒'; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 2rem; color: white; }
+.shop-item-detailed { display: flex; background-color: var(--bg-card); border-radius: 1rem; border: 1px solid var(--border-color); overflow: hidden; }
+.item-thumbnail-detailed { flex-shrink: 0; width: 150px; background-color: #4f46e5; }
+.item-rarity { font-size: 0.75rem; font-weight: 700; padding: 0.25rem 0.75rem; border-radius: 9999px; color: white; }
+.item-rarity.epic { background: #a21caf; }
+.item-rarity.rare { background: #3b82f6; }
+.item-action-area { display: flex; justify-content: space-between; align-items: center; margin-top: 1rem; }
+.item-price { font-weight: 700; font-size: 1.125rem; color: #ffc700; }
+.buy-button { font-size: 0.875rem; font-weight: 600; padding: 0.5rem 1.5rem; border-radius: 9999px; color: white; background: linear-gradient(90deg, var(--color-primary), var(--color-secondary)); cursor: pointer; transition: all 0.2s; }
+.buy-button:hover { transform: scale(1.05); }
+.buy-button:disabled { background: #374151; color: #9ca3af; cursor: not-allowed; }
+.shop-item-detailed.owned .buy-button { background: #16a34a; }
+.league-widget { background-color: var(--bg-card); border-radius: 1rem; padding: 1.5rem; border: 1px solid var(--border-color); }
+.podium-container { display: flex; justify-content: center; align-items: flex-end; gap: 1rem; margin-top: 3rem; flex-wrap: wrap; }
+.rank-card { background-color: var(--bg-card); border: 2px solid var(--border-color); border-radius: 1rem; padding: 1.5rem; text-align: center; position: relative; width: 180px; transition: all 0.3s ease; }
+.rank-card:hover { transform: translateY(-10px); }
+.rank-card .podium-avatar { width: 80px; height: 80px; border-radius: 50%; margin: 0 auto 1rem; }
+.rank-card .podium-rank { position: absolute; top: -20px; left: 50%; transform: translateX(-50%); width: 40px; height: 40px; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-weight: 800; font-size: 1.25rem; color: white; }
+.rank-card.rank-1 { order: 2; transform: scale(1.1); z-index: 10; border-color: #facc15; box-shadow: 0 0 30px #facc1580; }
+.rank-card.rank-2 { order: 1; }
+.rank-card.rank-3 { order: 3; }
+.podium-rank.gold { background: #facc15; }
+.podium-rank.silver { background: #c0c0c0; }
+.podium-rank.bronze { background: #cd7f32; }
+.podium-name { font-weight: 700; color: white; font-size: 1.125rem; }
+.podium-score { font-weight: 500; color: var(--text-muted); }
+.player-list { margin-top: 2rem; max-width: 2xl; margin-left: auto; margin-right: auto; }
+.player-card { display: grid; grid-template-columns: 30px 1fr auto 50px; align-items: center; gap: 1rem; background-color: var(--bg-card); padding: 0.75rem 1.5rem; border-radius: 0.5rem; border: 1px solid var(--border-color); margin-top: 0.5rem;}
+.player-info { display: flex; align-items: center; gap: 1rem; font-weight: 600; }
+.player-card .avatar { width: 2.5rem; height: 2.5rem; border-radius: 50%; }
+.player-score { font-weight: 700; color: white; justify-self: end; }
+.rank-change { font-size: 0.875rem; font-weight: 700; justify-self: center; }
+.rank-up { color: #22c55e; }
+.rank-down { color: #ef4444; }
+.rank-same { color: var(--text-muted); }
