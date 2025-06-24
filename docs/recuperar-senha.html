@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recuperar Senha | FACILLIT hub</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --color-primary: #ff3131;
+            --color-secondary: #ff914d;
+            --bg-dark: #0d1117;
+            --bg-glass: rgba(22, 27, 34, 0.7);
+            --border-glass: rgba(255, 255, 255, 0.1);
+            --text-light: #e2e8f0;
+            --text-muted: #94a3b8;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        .main-container {
+            width: 100%;
+            max-width: 450px;
+            padding: 2rem;
+            text-align: center;
+        }
+        .glass-card {
+            background: var(--bg-glass);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid var(--border-glass);
+            border-radius: 1.5rem;
+            padding: 3rem;
+        }
+        .form-title {
+            font-size: 1.875rem; /* text-3xl */
+            font-weight: 700;
+            color: white;
+            margin-bottom: 0.75rem;
+        }
+        .form-subtitle {
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+        }
+        input[type="email"] {
+            background-color: rgba(0,0,0,0.2);
+            border: 1px solid var(--border-glass);
+            color: white;
+            width: 100%;
+            border-radius: 0.5rem;
+            padding: 0.75rem 1rem;
+            margin-bottom: 1.5rem;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+        input[type="email"]:focus {
+            outline: none;
+            border-color: var(--color-primary);
+            box-shadow: 0 0 0 3px rgba(255, 49, 49, 0.3);
+        }
+        button[type="submit"] {
+            width: 100%;
+            background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+            color: white;
+            font-weight: 600;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.3s;
+        }
+        button[type="submit"]:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 20px rgba(255, 49, 49, 0.4);
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 2rem;
+            color: var(--text-muted);
+            font-size: 0.875rem;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .back-link:hover {
+            color: var(--color-primary);
+        }
+        
+        /* Estilos da notificação (mantidos) */
+        .notification { position: fixed; top: 20px; left: 50%; transform: translate(-50%, -150%); padding: 1rem 2rem; border-radius: 0.5rem; color: white; transition: transform 0.4s ease-in-out; z-index: 100; font-weight: 500;}
+        .notification.show { transform: translate(-50%, 0); }
+        .notification.success { background: linear-gradient(90deg, #10B981, #34D399); }
+        .notification.error { background: linear-gradient(90deg, #EF4444, #F87171); }
+    </style>
+</head>
+<body>
+    <div id="notification" class="notification"></div>
+
+    <div class="main-container">
+        <a href="/index.html" class="inline-block mb-8">
+            <img src="/images/isotipo gradient(png).png" alt="FACILLIT hub Logo" class="w-16 h-16">
+        </a>
+
+        <div class="glass-card">
+            <form id="reset-password-form">
+                <h1 class="form-title">Resetar Senha</h1>
+                <p class="form-subtitle">Sem problemas! Digite seu e-mail e enviaremos um link para você criar uma nova senha.</p>
+                <input type="email" id="reset-email" placeholder="seu.email@exemplo.com" required />
+                <button type="submit">Enviar Link de Recuperação</button>
+            </form>
+        </div>
+
+        <a href="/docs/login.html" class="back-link">Lembrou sua senha? Voltar para o Login</a>
+    </div>
+
+    <script src="/js/recuperar-senha.js" type="module"></script>
+</body>
+</html>

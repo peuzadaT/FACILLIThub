@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atualizar Senha | FACILLIT hub</title>
+    <link rel="stylesheet" href="/css/login.css" /> <style>
+        :root { --color-primary: #ff3131; --bg-dark: #0d1117; }
+        body{ display: flex; align-items: center; justify-content: center; height: 100vh; background-color: var(--bg-dark);}
+        .form-container{ padding: 0 40px; text-align: center; color: white; }
+        input { background-color: #eee; border: none; margin: 8px 0; padding: 10px 15px; font-size: 13px; border-radius: 8px; width: 100%; outline: none; }
+        button { background: linear-gradient(90deg, #ff3131, #ff914d); color: #fff; font-size: 12px; padding: 10px 45px; border: 1px solid transparent; border-radius: 8px; font-weight: 600; text-transform: uppercase; margin-top: 10px; cursor: pointer; }
+        /* Estilos de notificação */
+        .notification { position: fixed; top: 20px; left: 50%; transform: translate(-50%, -150%); padding: 1rem 2rem; border-radius: 0.5rem; color: white; transition: transform 0.4s ease-in-out; z-index: 100; font-weight: 500;}
+        .notification.show { transform: translate(-50%, 0); }
+        .notification.success { background: linear-gradient(90deg, #10B981, #34D399); }
+        .notification.error { background: linear-gradient(90deg, #EF4444, #F87171); }
+    </style>
+</head>
+<body>
+    <div id="notification" class="notification"></div>
+    <div class="form-container" style="max-width: 400px;">
+        <form id="update-password-form">
+            <h1>Crie sua Nova Senha</h1>
+            <p style="color: #ccc; font-size: 14px; margin: 20px 0;">Por favor, digite sua nova senha abaixo.</p>
+            <input type="password" id="new-password" placeholder="Nova Senha" required minlength="6" />
+            <input type="password" id="confirm-new-password" placeholder="Confirme a Nova Senha" required minlength="6" />
+            <button type="submit">Salvar Nova Senha</button>
+        </form>
+    </div>
+    <script src="/js/atualizar-senha.js" type="module"></script>
+</body>
+</html>

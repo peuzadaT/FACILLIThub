@@ -1,3 +1,74 @@
+// Importa o cliente Supabase e a função de logout
+import { supabase } from './supabaseClient.js';
+import { signOutUser } from './auth-guard.js';
+
+// Função para verificar o status do login e atualizar a navegação
+async function updateNav() {
+    const { data: { session } } = await supabase.auth.getSession();
+    
+    const navLoggedOut = document.getElementById('nav-logged-out');
+    const navLoggedIn = document.getElementById('nav-logged-in');
+
+    if (session) {
+        // Usuário está logado: mostra a navegação de logado
+        navLoggedOut.classList.add('hidden');
+        navLoggedIn.classList.remove('hidden');
+        navLoggedIn.classList.add('flex');
+    } else {
+        // Usuário está deslogado: mostra a navegação padrão
+        navLoggedOut.classList.remove('hidden');
+        navLoggedIn.classList.add('hidden');
+        navLoggedIn.classList.remove('flex');
+    }
+}
+
+
+// --- CÓDIGO ORIGINAL DA PÁGINA (MANTIDO) ---
+document.addEventListener('DOMContentLoaded', () => {
+
+    // CHAMA A FUNÇÃO PARA ATUALIZAR A NAVEGAÇÃO ASSIM QUE A PÁGINA CARREGA
+    updateNav();
+
+    // Adiciona evento ao novo botão de logout
+    const logoutBtn = document.getElementById('logout-btn-index');
+    if (logoutBtn) {
+        logoutBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            signOutUser();
+        });
+    }
+
+    // Mobile menu toggle
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    if (menuToggle && mobileMenu) {
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    }
+    
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop - 80,
+                    behavior: 'smooth'
+                });
+                if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            }
+        });
+    });
+
+    // EFEITO DE CURSOR, ANIMAÇÕES DE SCROLL, CONTADORES, ETC...
+    // ... (o restante do seu código original continua aqui, sem alterações)
+});
 // Mobile menu toggle
 const menuToggle = document.getElementById('menu-toggle');
 const mobileMenu = document.getElementById('mobile-menu');
