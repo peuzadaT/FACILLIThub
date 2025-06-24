@@ -15,17 +15,15 @@
     <header class="game-header p-4 fixed top-0 left-0 right-0 z-50">
         <div class="container mx-auto flex justify-between items-center">
             <div class="flex items-center gap-4">
-                <img src="/images/plataformas/games.png" alt="Avatar" class="w-10 h-10">
-               <div class="text-xl font-bold text-white">
-    FACILLIT <span class="bg-gradient-to-r from-[#ff3131] to-[#f97316] text-transparent bg-clip-text font-bold">games</span>
-</div>
+                <img src="../../images/logos/fhub-log.svg" alt="Avatar" class="w-10 h-10">
+                <span class="font-bold text-white text-lg">FACILLIT games</span>
+            </div>
             <nav id="main-nav" class="hidden md:flex items-center gap-2">
                 <button class="nav-button active" data-target="page-jogar">Jogar</button>
                 <button class="nav-button" data-target="page-progresso">Meu Progresso</button>
                 <button class="nav-button" data-target="page-avatar">Meu Avatar</button>
                 <button class="nav-button" data-target="page-loja">Loja</button>
                 <button class="nav-button" data-target="page-rankings">Rankings</button>
-                 <button class="nav-button" data-target="page-configuracoes">Configurações</button>
             </nav>
             <div class="flex items-center gap-4">
                 <div id="points-display" class="points-counter text-sm"><span class="text-yellow-300">★</span> 2500 Pontos</div>
@@ -35,88 +33,75 @@
     </header>
 
     <main class="container mx-auto px-4 pt-28 pb-16">
-        <div id="page-jogar" class="page-content">
-             <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                <div class="lg:col-span-2">
-                    <div class="featured-game-banner">
-                        <div class="p-8 md:p-12">
-                            <h2 class="text-4xl lg:text-5xl font-extrabold text-white">A Lenda do Templo Matemático</h2>
-                            <p class="mt-4 text-white/80 max-w-lg">Resolva enigmas ancestrais usando o poder da matemática para desvendar os segredos do templo perdido. Novo desafio toda semana!</p>
-                            <button class="cta-button mt-6">Jogar Agora</button>
-                        </div>
-                    </div>
-                    <h2 class="section-title mt-8">Em Alta</h2>
-                    <div class="games-grid mt-6">
-                        <div class="game-card"></div>
-                        <div class="game-card"></div>
-                        <div class="game-card"></div>
-                    </div>
-                </div>
-                <div class="space-y-6">
-                    <div class="mission-card">
-                         <h3 class="widget-title">Missão da Semana</h3>
-                         <ul class="mission-tasks">
-                             <li class="done">Jogar 3 jogos de Lógica</li>
-                             <li class="done">Alcançar 1000 pontos</li>
-                             <li>Vencer um amigo no Ranking</li>
-                         </ul>
-                         <div class="progress-bar-bg mt-3"><div class="progress-bar" style="width: 66%;"></div></div>
-                    </div>
-                    <div class="daily-reward-card">
-                        <h3 class="widget-title">Prêmio Diário</h3>
-                        <p>Sequência de 3 dias! Volte amanhã para um prêmio maior!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="page-progresso" class="page-content hidden">
-            <h1 class="text-4xl font-extrabold text-white mb-8">Meu Progresso</h1>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
-                <div class="widget-card p-6 text-center"><h4 class="widget-title">Tempo Total</h4><p class="widget-data">28 Horas</p></div>
-                <div class="widget-card p-6 text-center"><h4 class="widget-title">Jogos Concluídos</h4><p class="widget-data">42</p></div>
-                <div class="widget-card p-6 text-center"><h4 class="widget-title">Conquistas</h4><p class="widget-data">15 / 50</p></div>
-            </div>
-             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-8">
-                <div class="widget-card p-6"><h3 class="widget-title mb-4">Habilidades</h3><div class="h-64"></div></div>
-                <div class="widget-card p-6"><h3 class="widget-title mb-4">Atividade da Semana</h3><div class="calendar-heatmap"><div class="active-1"></div><div></div><div class="active-3"></div><div class="active-2"></div><div class="active-4"></div><div></div><div></div></div></div>
-            </div>
-        </div>
+        <div id="page-jogar" class="page-content"></div>
+        <div id="page-progresso" class="page-content hidden"></div>
 
         <div id="page-avatar" class="page-content hidden">
              <h1 class="text-4xl font-extrabold text-white mb-8">Personalize seu Avatar</h1>
-             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="md:col-span-1 flex justify-center items-start"><div class="avatar-preview" id="avatar-preview-container"><img src="../../images/logos/fhub-log.svg" id="avatar-preview-img" class="avatar-img"></div></div>
-                <div class="md:col-span-2"><div id="customization-tabs" class="category-filter flex-wrap gap-3 mb-6"><button class="active" data-tab="avatar-tab-avatares">Avatares</button><button data-tab="avatar-tab-temas">Temas</button><button data-tab="avatar-tab-bordas">Bordas</button></div><div id="avatar-tab-avatares" class="avatar-tab-content games-grid"><div class="shop-item owned equipped"></div><div class="shop-item owned"></div><div class="shop-item locked"></div></div><div id="avatar-tab-temas" class="avatar-tab-content hidden games-grid"></div><div id="avatar-tab-bordas" class="avatar-tab-content hidden games-grid"></div></div>
+             <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="lg:col-span-1 flex justify-center items-start">
+                    <div id="avatar-preview-container" class="avatar-preview">
+                        <img src="../../images/logos/fhub-log.svg" id="avatar-preview-img" class="avatar-img">
+                    </div>
+                </div>
+                <div class="lg:col-span-2 widget-card p-6">
+                    <h3 class="widget-title mb-4">Meus Itens</h3>
+                    <div id="inventory-grid" class="games-grid">
+                        <div class="shop-item owned" data-type="avatar" data-value="new-avatar.svg"><div class="item-thumbnail"></div><p>Robô Amigo</p></div>
+                        <div class="shop-item owned" data-type="border" data-value="border-neon"><div class="item-thumbnail"></div><p>Borda Neon</p></div>
+                        <div class="shop-item owned" data-type="theme" data-value="theme-space"><div class="item-thumbnail"></div><p>Tema Espacial</p></div>
+                    </div>
+                </div>
              </div>
         </div>
 
         <div id="page-loja" class="page-content hidden">
             <h1 class="text-4xl font-extrabold text-white mb-2">Loja de Itens</h1>
-            <p class="text-lg text-slate-400 mb-8">Você tem <span class="font-bold text-yellow-400">★ 1.250 Pontos</span> para gastar!</p>
-            <div class="category-filter flex-wrap gap-3 mb-8"><button class="active">Todos</button><button>Avatares</button><button>Temas</button></div>
+            <p class="text-lg text-slate-400 mb-8">Use seus pontos para conseguir itens incríveis!</p>
             <div id="shop-grid" class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="shop-item-detailed" data-price="500"><div class="item-thumbnail-detailed"></div><div class="p-6"><div class="flex justify-between items-center"><h3 class="text-xl font-bold text-white">Avatar Robô Amigo</h3><div class="item-rarity rare">Raro</div></div><p class="text-slate-400 my-3 text-sm">Um novo visual robótico para seu perfil. Mostra que você é expert em lógica!</p><div class="item-action-area"><div class="item-price">★ 500 Pontos</div><button class="buy-button">Comprar</button></div></div></div>
-                <div class="shop-item-detailed owned" data-price="750"><div class="item-thumbnail-detailed"></div><div class="p-6"><h3 class="text-xl font-bold text-white">Tema Fundo do Mar</h3><p class="text-slate-400 my-3 text-sm">Um tema animado de oceano para o fundo do seu perfil.</p><div class="item-action-area"><div class="item-price">★ 750 Pontos</div><button class="buy-button" disabled>Já Possui</button></div></div></div>
-                <div class="shop-item-detailed" data-price="3000"><div class="item-thumbnail-detailed"></div><div class="p-6"><div class="flex justify-between items-center"><h3 class="text-xl font-bold text-white">Avatar Dragão Lendário</h3><div class="item-rarity epic">Épico</div></div><p class="text-slate-400 my-3 text-sm">Um avatar super raro para mostrar a todos o seu poder.</p><div class="item-action-area"><div class="item-price">★ 3000 Pontos</div><button class="buy-button" disabled>Pontos Insuficientes</button></div></div></div>
+                <div class="shop-item-detailed" data-price="500">
+                    <div class="item-thumbnail-detailed"></div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-xl font-bold text-white">Avatar Robô Amigo</h3>
+                            <div class="item-rarity rare">Raro</div>
+                        </div>
+                        <p class="text-slate-400 my-3 text-sm">Um novo visual robótico para seu perfil. Mostra que você é expert em lógica!</p>
+                        <div class="item-action-area">
+                            <div class="item-price">★ 500 Pontos</div>
+                            <button class="buy-button">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-item-detailed owned" data-price="750">
+                    <div class="item-thumbnail-detailed"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white">Tema Fundo do Mar</h3>
+                        <p class="text-slate-400 my-3 text-sm">Um tema animado de oceano para o fundo do seu perfil.</p>
+                        <div class="item-action-area">
+                            <div class="item-price">★ 750 Pontos</div>
+                            <button class="buy-button" disabled>Já Possui</button>
+                        </div>
+                    </div>
+                </div>
+                 <div class="shop-item-detailed" data-price="3000">
+                    <div class="item-thumbnail-detailed"></div>
+                    <div class="p-6">
+                         <div class="flex justify-between items-center">
+                            <h3 class="text-xl font-bold text-white">Avatar Dragão Lendário</h3>
+                            <div class="item-rarity epic">Épico</div>
+                        </div>
+                        <p class="text-slate-400 my-3 text-sm">Um avatar super raro para mostrar a todos o seu poder.</p>
+                        <div class="item-action-area">
+                            <div class="item-price">★ 3000 Pontos</div>
+                            <button class="buy-button" disabled>Pontos Insuficientes</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         
-        <div id="page-rankings" class="page-content hidden">
-            <h1 class="text-4xl font-extrabold text-white mb-4">Placar de Líderes</h1>
-            <div class="league-widget mb-8"><div class="flex justify-between items-center mb-2"><span class="font-bold text-lg text-yellow-300">Liga Ouro</span><span class="text-sm text-slate-400">Próxima Liga: Platina</span></div><div class="progress-bar-bg"><div class="progress-bar" style="width: 80%;"></div></div></div>
-             <div class="category-filter flex-wrap gap-3 my-8"><button class="active">Geral</button><button>Corrida da Tabuada</button><button>Labirinto Lógico</button></div>
-            <div class="podium-container"><div class="rank-card rank-2"><img src="../../images/logos/fhub-log.svg" class="podium-avatar"/><span class="podium-rank silver">2</span><p class="podium-name">Leo (Você)</p><p class="podium-score">12.850</p></div><div class="rank-card rank-1"><img src="../../images/logos/fhub-log.svg" class="podium-avatar"/><span class="podium-rank gold">1</span><p class="podium-name">Bia</p><p class="podium-score">15.400</p></div><div class="rank-card rank-3"><img src="../../images/logos/fhub-log.svg" class="podium-avatar"/><span class="podium-rank bronze">3</span><p class="podium-name">Carlos</p><p class="podium-score">11.200</p></div></div>
-            <div class="player-list"><div class="player-card"><span>4</span><div class="player-info"><img src="../../images/logos/fhub-log.svg" class="avatar"/>Ana</div><div class="player-score">9.800</div><div class="rank-change rank-up">▲ 2</div></div><div class="player-card"><span>5</span><div class="player-info"><img src="../../images/logos/fhub-log.svg" class="avatar"/>Julio</div><div class="player-score">9.540</div><div class="rank-change rank-down">▼ 1</div></div><div class="player-card"><span>6</span><div class="player-info"><img src="../../images/logos/fhub-log.svg" class="avatar"/>Sofia</div><div class="player-score">9.110</div><div class="rank-change rank-same">▬</div></div></div>
-        </div>
-        
-        <div id="page-configuracoes" class="page-content hidden">
-            <h1 class="text-4xl font-extrabold text-white mb-8">Configurações</h1>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="widget-card p-6"><h3 class="widget-title mb-4">Opções de Jogo</h3></div>
-                <div class="widget-card p-6"><h3 class="widget-title mb-4">Controle dos Pais</h3></div>
-            </div>
-        </div>
+        <div id="page-rankings" class="page-content hidden"></div>
     </main>
 
     <script src="dashboard-games.js"></script>
